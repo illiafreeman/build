@@ -99,12 +99,22 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.2;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   flex-direction: column;
-  background: #fff;
+  background: #000;
   font-family: var(--font-family);
+}
+
+.svg path {
+  stroke-dasharray: 6;
+  stroke-dashoffset: 1200;
+  animation: dash 60s linear forwards infinite;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
