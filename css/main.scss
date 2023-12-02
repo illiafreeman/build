@@ -117,10 +117,10 @@ body {
     // width: 50vw;
     // height: 900px;
     path {
-        stroke-dasharray:6;
-        stroke-dashoffset:1200;
-        -webkit-animation:dash 60s linear forwards infinite;
-        animation:dash 60s linear forwards infinite;
+        stroke-dasharray: 6;
+        stroke-dashoffset: 1200;
+        -webkit-animation: dash 60s linear forwards infinite;
+        animation: dash 60s linear forwards infinite;
     }
     @-webkit-keyframes dash {
         to {
