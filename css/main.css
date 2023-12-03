@@ -40,7 +40,6 @@ a:visited,
 a:active {
   text-decoration: none;
   position: relative;
-  color: currentColor;
 }
 
 ul {
@@ -88,6 +87,7 @@ table th, table td {
   --second-family: "Open Sans", sans-serif;
   --transition: all 0.2s ease-in-out;
   --transition05: all 0.5s ease-in-out;
+  --color: #202020;
 }
 
 body {
@@ -95,7 +95,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  color: #202020;
+  color: --color;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.4;
@@ -132,6 +132,115 @@ body {
   opacity: 0;
 }
 
+.header__group {
+  display: flex;
+  gap: 46px;
+}
+.header__group_contact {
+  gap: 30px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+}
+.header__nav-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header__nav-wrap .btn {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.header__nav-item.parent .header__subnav {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.header__nav-link {
+  font-weight: 400;
+  transition: var(--transition);
+  color: var(--color);
+}
+.header__nav-link:hover {
+  color: #2063cc;
+}
+.header__tel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 28px;
+}
+.header__tel-item {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: #2063cc;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+.header__tel-item svg {
+  fill: #2063cc;
+  transition: var(--transition);
+  margin-right: 8px;
+}
+.header__tel-item:hover {
+  color: #ec4015;
+}
+.header__tel-item:hover svg {
+  fill: #ec4015;
+}
+.header__tel-btn {
+  display: none;
+}
+.header__menu-btn {
+  display: none;
+}
+
+.container {
+  width: 1660px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 58px;
+  border-radius: 29px;
+  background: #2063cc;
+  padding: 0 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  transition: var(--transition);
+  color: #fff;
+  border: 2px solid #2063cc;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2063cc;
+}
+.btn:hover {
+  background: #2063cc;
+  color: #fff;
+  color: #fff;
+}
+.btn_invert {
+  color: #2063cc;
+  border: 2px solid #2063cc;
+  background: transparent;
+}
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;

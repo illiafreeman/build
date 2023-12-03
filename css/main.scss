@@ -48,7 +48,7 @@ a:visited,
 a:active{
     text-decoration: none;
     position: relative;
-    color: currentColor;
+    //color: currentColor;
 }
 
 ul{
@@ -96,6 +96,7 @@ table th, table td{
     --second-family: "Open Sans", sans-serif;
     --transition: all 0.2s ease-in-out;
     --transition05: all 0.5s ease-in-out;
+    --color: #202020;
 }
 
 body {
@@ -103,7 +104,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    color: #202020;
+    color: (--color);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.4;
@@ -146,31 +147,133 @@ body {
     background: url(../img/pos.svg) center center no-repeat;
 }
 
-
 .header {
-    &__container {}
-    &__nav-wrap {}
-    &__nav {}
-    &__nav-item {}
-    &__nav-link {}
-    &__subnav {}
+    &__group{
+        display: flex;
+        gap: 46px;
+        &_contact{
+            gap: 30px;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        align-items: center;
+    }
+    &__nav-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        .btn{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+    &__nav-item {
+        &.parent {
+            .header__subnav{
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+            }
+            
+        }
+    }
+    &__nav-link {
+        font-weight: 400;
+        transition: (var(--transition));
+        color: (var(--color));
+        &:hover{
+            color: #2063cc;
+        }
+    }
+    &__subnav {
+        
+    }
     &__subnav-item {}
     &__subnav-link {}
-    &__tel {}
-    &__tel-item {}
-    &__tel-btn {}
-    &__menu-btn {}
+    &__tel {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 28px;
+    }
+    &__tel-item {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        color: #2063cc;
+        display: flex;
+        align-items: center;
+        transition: (var(--transition));
+        svg{
+            fill: #2063cc;
+            transition: (var(--transition));
+            margin-right: 8px;
+        }
+        &:hover{
+            color: #ec4015;
+            svg{
+                fill: #ec4015;
+            }
+        }
+    }
+    &__tel-btn {
+        display: none;
+    }
+    &__menu-btn {
+        display: none;
+    }
 }
 .container {
+    width: 1660px;
+    margin: 0 auto;
 }
 .logo {
+    &__header{
+
+    }
 }
 .btn {
-    &_invert {}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    border-radius: 29px;
+    background: #2063cc;
+    padding: 0 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    transition: var(--transition);
+    color: #fff;
+    border: 2px solid #2063cc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #2063cc;
+    &:hover{
+        background: #2063cc;
+        color: #fff;
+        color: #fff;
+    }
+    &_invert {
+        color: #2063cc;
+        border: 2px solid #2063cc;
+        background: transparent;
+    }
     &_transparent {}
 }
-.parent {
-}
+
 .hamburger {
 }
 .article {
