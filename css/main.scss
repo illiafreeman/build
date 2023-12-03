@@ -147,6 +147,170 @@ body {
 }
 
 
+.header {
+    &__container {}
+    &__nav-wrap {}
+    &__nav {}
+    &__nav-item {}
+    &__nav-link {}
+    &__subnav {}
+    &__subnav-item {}
+    &__subnav-link {}
+    &__tel {}
+    &__tel-item {}
+    &__tel-btn {}
+    &__menu-btn {}
+}
+.container {
+}
+.logo {
+}
+.btn {
+    &_invert {}
+    &_transparent {}
+}
+.parent {
+}
+.hamburger {
+}
+.article {
+}
+.intro {
+    &__head {}
+    &__pic {}
+    &__min {
+      &_pay {}
+      &_spec {}
+    }
+    &__min-desc {}
+    &__min-pic {}
+}
+.card {
+    &_inner {}
+    &_info {}
+    &_pic {}
+    &_alert {}
+    &__pic {}
+    &__desc {}
+}
+.services {
+    &__title {}
+    &__item {
+      &_other {}
+    }
+    &__item-head {}
+    &__item-desc {}
+}
+.benefit {
+    &__title {}
+    &__item {}
+    &__desc {}
+    &__icon {}
+}
+.ac {
+}
+.step {
+    &__title {}
+    &__list {}
+    &__item {}
+    &__pic {}
+    &__desc {}
+    &__num {}
+}
+.help {
+    &__title {}
+    &__pic {}
+    &__list {}
+    &__item {}
+    &__head {}
+    &__body {}
+    &__desc {}
+}
+.row {
+}
+.col {
+    &_50 {}
+}
+.need {
+    &__item {}
+}
+.join {
+    &__item {}
+    &__pic {}
+    &__desc {}
+}
+.question {
+    &__body {}
+    &__head {}
+    &__desc {}
+}
+.team {
+    &__pic {}
+    &__desc {}
+    &__name {}
+    &__pos {}
+}
+.team-gal {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.partner {
+    &__title {}
+    &__list {}
+    &__item {}
+}
+.review {
+    &__desc {}
+    &__text {}
+}
+.review-gal {
+    &__desc {}
+}
+.swiper {
+}
+.why {
+    &__card {}
+    &__card-title {}
+    &__card-img {}
+}
+.list {
+    &__item {
+      &_check {}
+      &_pos {}
+      &_cross {}
+      &_neg {}
+    }
+}
+.form {
+    &__agree {}
+}
+.df {
+}
+.footer {
+    &__logo {}
+    &__contact {}
+    &__desc {}
+    &__contact-item {}
+    &__nav {}
+    &__navlist {}
+    &__navlist-item {}
+    &__navlist-link {}
+    &__map {}
+    &__map-desc {}
+    &__copy {}
+    &__copy-copy {}
+    &__copy-dev {}
+}
+.map {
+}
+
+
 
 
 
