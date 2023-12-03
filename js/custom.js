@@ -1,16 +1,24 @@
 
-const swiper = new Swiper('.swiper', {
+const teamGal = new Swiper('.team-gal', {
     slidesPerView: 'auto',
     spaceBetween: 30,
     freeMode: true,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+const reviewGal = new Swiper('.review-gal', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
- 
-  });
-  
+});
 
 Fancybox.bind('[data-fancybox]', {
     compact: false,
