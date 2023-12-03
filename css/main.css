@@ -122,7 +122,14 @@ body {
 }
 
 .ymaps3x0--map-copyrights_right {
-  display: none;
+  display: none !important;
+}
+
+.ymaps3x0--default-marker__icon-box {
+  background: url(../img/pos.svg) center center no-repeat;
+}
+.ymaps3x0--default-marker__icon-box svg {
+  opacity: 0;
 }
 
 @media only screen and (max-width: 1280px) {
