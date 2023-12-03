@@ -121,6 +121,10 @@ body {
   -webkit-filter: grayscale(100%);
 }
 
+.ymaps-copyrights-pane {
+  display: none !important;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;

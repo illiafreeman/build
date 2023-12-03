@@ -50,7 +50,10 @@ function init () {
     var myMap = new ymaps.Map("map", 
         {
             center: [59.984976, 30.318303],
-            zoom: 16
+            zoom: 16,
+            controls: []
+        }, {
+            suppressMapOpenBlock: true
         }
     ),
     pos = new ymaps.Placemark([59.984976, 30.318303], 
@@ -60,12 +63,12 @@ function init () {
         {
             // Опции.
             // Своё изображение иконки метки.
-            iconImageHref: 'img/icon_company.svg',
+            //iconImageHref: 'img/icon_gift.svg',
             // Размеры метки.
-            iconImageSize: [70, 40],
+            //iconImageSize: [70, 40],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
-            iconImageOffset: [0, -60]
+            //iconImageOffset: [0, -60]
         }
     );
     myMap.geoObjects.add(pos);
