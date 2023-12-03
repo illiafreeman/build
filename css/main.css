@@ -117,12 +117,20 @@ body {
   }
 }
 
-.ymaps-layers-pane {
+.map {
   -webkit-filter: grayscale(100%);
 }
 
 .ymaps-copyrights-pane {
   display: none !important;
+}
+
+.my-marker {
+  position: relative;
+  box-sizing: border-box;
+  transform: translate(-50%, calc(-50% - 24px));
+  cursor: pointer;
+  max-width: none;
 }
 
 @media only screen and (max-width: 1280px) {

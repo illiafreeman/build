@@ -43,33 +43,30 @@ Fancybox.bind('[data-fancybox]', {
         type: 'classic',
     },
 }); 
+const LOCATION = {center: [30.318303, 59.984976], zoom: 16};
+window.map = null;
 
-ymaps.ready(init);
+      main();
+      async function main() {
+        await ymaps3.ready;
+        const {YMap, YMapDefaultSchemeLayer, YMapControls, YMapDefaultFeaturesLayer, YMapMarker} = ymaps3;
 
-function init () {
-    var myMap = new ymaps.Map("map", 
-        {
-            center: [59.984976, 30.318303],
-            zoom: 16,
-            controls: []
-        }, {
-            suppressMapOpenBlock: true
-        }
-    ),
-    pos = new ymaps.Placemark([59.984976, 30.318303], 
-        {
-            hintContent: 'ул. Лисичанская, д. 6'
-        }, 
-        {
-            // Опции.
-            // Своё изображение иконки метки.
-            //iconImageHref: 'img/icon_gift.svg',
-            // Размеры метки.
-            //iconImageSize: [70, 40],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            //iconImageOffset: [0, -60]
-        }
-    );
-    myMap.geoObjects.add(pos);
-}
+        const {YMapZoomControl} = await ymaps3.import('@yandex/ymaps3-controls@0.0.1');
+
+        map = new YMap(document.getElementById('map'), {location: LOCATION});
+
+        map.addChild((scheme = new YMapDefaultSchemeLayer()));
+        map.addChild(new YMapDefaultFeaturesLayer());
+
+        map.addChild(new YMapControls({position: 'right'}).addChild(new YMapZoomControl({})));
+
+        const el = document.createElement('img');
+        el.className = 'my-marker';
+        el.src = '/img/pos.svg';
+        el.onclick = () => map.update({location: {...LOCATION, duration: 400}});
+        map.addChild(new YMapMarker({coordinates: LOCATION.center}, el));
+      }
+
+
+
+
