@@ -96,7 +96,8 @@ table th, table td{
     --second-family: "Open Sans", sans-serif;
     --transition: all 0.2s ease-in-out;
     --transition05: all 0.5s ease-in-out;
-    --color: #202020;
+    --black: #202020;
+    --blue: #2063cc;
 }
 
 body {
@@ -104,7 +105,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
-    color: (--color);
+    color: (--black);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.4;
@@ -192,15 +193,31 @@ body {
     }
     &__nav-item {
         &.parent {
+            position: relative;
+            span{
+                cursor: default;
+            }
+            svg{
+                fill: var(--black);
+                position: absolute;
+                top: 20px;
+                right: 16px;
+                transition: (var(--transition));
+            }
             .header__subnav{
                 opacity: 0;
                 visibility: hidden;
                 position: absolute;
             }
-            
+            &:hover{
+                svg{
+                    fill: var(--blue);
+                }
+            }
         }
     }
-    &__nav-link {
+    
+    &__nav-link, &__nav-parent {
         font-weight: 400;
         transition: (var(--transition));
         color: (var(--color));
@@ -217,6 +234,9 @@ body {
             border: 1px solid #2063cc;
             background: #f2f6ff;
         }
+    }
+    &__nav-parent {
+        padding-right: 32px;
     }
     &__subnav {
         
