@@ -147,6 +147,9 @@ body {
   box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
   background: #fff;
 }
+.header__logo {
+  align-self: center;
+}
 .header__group {
   display: flex;
   gap: 46px;
@@ -154,16 +157,19 @@ body {
 .header__group_contact {
   gap: 30px;
 }
+.header__group_contact .btn {
+  align-self: center;
+}
 .header__container {
   display: flex;
   justify-content: space-between;
   height: 120px;
-  align-items: center;
+  align-items: stretch;
 }
 .header__nav-wrap {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: stretch;
 }
 .header__nav-wrap .btn {
   opacity: 0;
@@ -173,8 +179,12 @@ body {
 .header__nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   gap: 4px;
+}
+.header__nav-item {
+  display: flex;
+  align-items: center;
 }
 .header__nav-item.parent {
   position: relative;
@@ -184,9 +194,7 @@ body {
 }
 .header__nav-item.parent svg {
   fill: var(--black);
-  position: absolute;
-  top: 20px;
-  right: 16px;
+  transform: translate(-22px, 2px);
   transition: var(--transition);
 }
 .header__nav-item.parent .header__subnav {

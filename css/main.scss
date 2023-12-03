@@ -161,23 +161,29 @@ body {
         box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
         background: #fff;
     }
+    &__logo{
+        align-self: center;
+    }
     &__group{
         display: flex;
         gap: 46px;
         &_contact{
             gap: 30px;
+            .btn{
+                align-self: center;
+            }
         }
     }
     &__container {
         display: flex;
         justify-content: space-between;
         height: 120px;
-        align-items: center;
+        align-items: stretch;
     }
     &__nav-wrap {
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: stretch;
         
         .btn{
             opacity: 0;
@@ -188,10 +194,12 @@ body {
     &__nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         gap: 4px;
     }
     &__nav-item {
+        display: flex;
+        align-items: center;
         &.parent {
             position: relative;
             span{
@@ -199,9 +207,7 @@ body {
             }
             svg{
                 fill: var(--black);
-                position: absolute;
-                top: 20px;
-                right: 16px;
+                transform: translate(-22px, 2px);
                 transition: (var(--transition));
             }
             .header__subnav{
@@ -283,11 +289,7 @@ body {
     width: 1660px;
     margin: 0 auto;
 }
-.logo {
-    &__header{
 
-    }
-}
 .btn {
     display: inline-flex;
     align-items: center;
