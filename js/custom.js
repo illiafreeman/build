@@ -69,5 +69,13 @@ async function main() {
 }
 /*end map*/
 
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 1) {
+        $('.header').addClass('fixed');
+    }
+    else {
+        $('.header').removeClass('fixed');
+    }
+});
 
 
