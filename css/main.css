@@ -460,15 +460,50 @@ body {
 }
 .intro__min {
   padding: 50px 130px 50px 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 .intro__min_pay {
   grid-row: 2/3;
   grid-column: 1/2;
+  background: #cce0ff;
 }
 .intro__min_spec {
   grid-row: 2/3;
   grid-column: 2/3;
+  background: #fee2db;
 }
+.intro__min-desc {
+  line-height: 120%;
+}
+.intro__min-pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 26px;
+  display: flex;
+  align-items: center;
+}
+.intro__min-pic:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;
+}
+.intro__min-pic img {
+  position: relative;
+  z-index: 20;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;

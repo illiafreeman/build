@@ -532,22 +532,53 @@ body {
         }
     }
     .card {
-        
         border-radius: 16px;
     }
     &__min {
-        padding: 50px 130px 50px 40px;
+        padding: 50px 130px 50px 40px; 
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
         &_pay {
             grid-row: 2 / 3;
             grid-column: 1 / 2;
+            background: #cce0ff;
         }
-
         &_spec {
             grid-row: 2 / 3;
             grid-column: 2 / 3;
+            background: #fee2db;
         }
-        &-desc {}
-        &-pic {}
+        &-desc {
+            line-height: 120%;
+        }
+        &-pic {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding-right: 26px;
+            display: flex;
+            align-items: center;
+            
+            &:before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 320px;
+                height: 320px;
+                border-radius: 50%;
+                background: #fff;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -30px;
+            }
+            img{
+                position: relative;
+                z-index: 20;
+            }
+        }
     }
     
 }
