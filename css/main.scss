@@ -784,17 +784,71 @@ body {
 
 
 .step {
+    display: grid;
+    grid-template: 1fr / 1fr 3fr;
+    gap: 20px;
     &__title {}
 
-    &__list {}
+    &__list {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        gap: 20px;
+        position: relative;
+        .svg{
+            position: absolute;
+            top: 72px;
+            right: 65px;
+        }
+    }
 
-    &__item {}
+    &__item {
+        position: relative;
+        background: #fff;
+        border-radius: 16px;
+        padding: 20px 40px 31px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        &:nth-child(2){
+            .step__pic{
+                margin-top: -20px;
+                margin-left: -10px;
+            }
+        }
+        &:nth-child(3){
+            .step__pic{
+                margin-top: 0;
+                margin-left: -10px;
+            }
+        }
+    }
 
     &__pic {}
 
-    &__desc {}
+    &__desc {
+        letter-spacing: 0.03em;
+    }
 
-    &__num {}
+    &__num {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fee2db;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #e8491f;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        
+    }
 }
 
 .help {
