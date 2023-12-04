@@ -214,7 +214,6 @@ body {
                 position: absolute;
                 top: 19px;
                 right: 16px;
-                //transform: translate(-22px, 2px);
                 transition: (var(--transition));
                 pointer-events: none;
                 width: 7px;
@@ -226,8 +225,9 @@ body {
                     transform: rotate(180deg);
                 }
                 > .header__subnav-wrap{
-                    display: block;
-                    
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
                 }
             }
             .header__nav-parent{
@@ -254,29 +254,24 @@ body {
             }
         }
     }
-    
-    
-    
-    
     &__subnav {
-        //opacity: 0;
-        //visibility: hidden;
-        
         border-radius: 0px 0px 16px 16px;
         box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
         background: #fff;
         padding: 30px 0 30px 30px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
         &-wrap{
-            display: none;
+            opacity: 0;
+            visibility: hidden;
             position: absolute;
             top: 100%;
             left: -40px;
             max-width: 340px;
             min-width: 340px;
             padding-top: 40px;
+            transition: var(--transition);
+            transform: translateY(10px);
         }
         .header__subnav{
             display: none;
@@ -289,7 +284,6 @@ body {
             padding: 30px 0 30px 30px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
             z-index: 100;
             .header__subnav-link{
                 white-space: nowrap;
@@ -297,16 +291,15 @@ body {
         }
     }
     &__subnav-item {
-        padding-right: 30px;
+        padding: 6px 30px 6px 0;
         &.parent{
             padding-right: 30px;
             position: relative;
             > svg{
                 fill: var(--black);
                 position: absolute;
-                top: 12px;
+                top: 16px;
                 right: 30px;
-                //transform: translate(-22px, 2px);
                 transition: (var(--transition));
                 pointer-events: none;
                 width: 7px;
@@ -314,7 +307,10 @@ body {
                 transform: rotate(-90deg);
             }
             .header__subnav{
-                display: none;
+                opacity: 0;
+                visibility: hidden;
+                transform: translateX(10px);
+                transition: (var(--transition));
             }
             &:hover{
                 > svg{
@@ -324,12 +320,11 @@ body {
                 .header__subnav-parent{
                     color: #2063cc;
                 }
-                > .header__subnav-wrap{
-                    display: block;
-                    padding-top: 40px;
-                }
                 .header__subnav{
-                    display: flex;
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateX(0);
                 }
             }
         }
