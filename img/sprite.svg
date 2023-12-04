@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-check" viewBox="0 0 26 26">
+        <g>
+            <rect x="1" y="1" width="24" height="24" rx="3" stroke-width="2"/>
+            <path d="M8 12.4L11.75 16L18 10" stroke-width="2"/>
+        </g>
+    </symbol>
+    
+</svg>

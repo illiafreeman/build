@@ -499,7 +499,14 @@ body {
         }
     }
 }
-
+.icon{
+    &_check{
+        width: 26px;
+        height: 26px;
+        stroke: #e8491f;
+        fill: transparent
+    }
+} 
 
 .hamburger {}
 
@@ -510,6 +517,19 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template: 1fr / 1fr 1fr;
+    &__col{
+        &_pic{
+
+        }
+        &_desc{
+
+        }
+    }
 }
 
 .col {
@@ -910,7 +930,43 @@ body {
 
 
 .need {
-    &__item {}
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px
+    }
+    &__item {
+        padding: 24px 60px 24px 40px;
+        font-family: var(--font-family);
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+        border-radius: 16px;
+        background: #fff;
+        position: relative;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background: url(../img/icon_check_orange.svg) no-repeat center center;
+            top: 25px;
+            right: 30px;
+        }
+    }
+    &__pic{
+        border-radius: 16px;
+        overflow: hidden;
+        height: 700px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
 }
 
 .join {
