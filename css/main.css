@@ -170,7 +170,7 @@ body {
 .header__nav-wrap {
   display: flex;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
 }
 .header__nav-wrap .btn {
   opacity: 0;
@@ -180,31 +180,42 @@ body {
 .header__nav {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   gap: 4px;
 }
 .header__nav-item {
   display: flex;
   align-items: center;
 }
+.header__nav-item:hover > .header__nav-parent {
+  color: #2063cc;
+  border: 1px solid #2063cc;
+  background: #f2f6ff;
+}
 .header__nav-item.parent {
   position: relative;
 }
-.header__nav-item.parent span {
-  cursor: default;
-}
-.header__nav-item.parent svg {
+.header__nav-item.parent > svg {
   fill: var(--black);
-  transform: translate(-22px, 2px);
+  position: relative;
+  top: 2px;
+  left: -22px;
   transition: var(--transition);
+  pointer-events: none;
+  width: 7px;
+  height: 4px;
 }
-.header__nav-item.parent .header__subnav {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-}
-.header__nav-item.parent:hover svg {
+.header__nav-item.parent:hover > svg {
   fill: var(--blue);
+  transform: rotate(180deg);
+}
+.header__nav-item.parent:hover > .header__subnav-wrap {
+  display: block;
+  padding-top: 40px;
+}
+.header__nav-item.parent .header__nav-parent {
+  padding-right: 32px;
+  cursor: default;
 }
 .header__nav-link, .header__nav-parent {
   font-weight: 400;
@@ -224,8 +235,36 @@ body {
   border: 1px solid #2063cc;
   background: #f2f6ff;
 }
-.header__nav-parent {
-  padding-right: 32px;
+.header__subnav {
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
+  background: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header__subnav-wrap {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -40px;
+  max-width: 340px;
+  min-width: 340px;
+}
+.header__subnav .header__subnav {
+  display: none;
+}
+.header__subnav-link {
+  font-size: 16px;
+  line-height: 120%;
+  color: #000;
+  font-weight: 400;
+  transition: var(--transition);
+  display: inline-block;
+}
+.header__subnav-link:hover {
+  color: #2063cc;
 }
 .header__tel {
   display: flex;
