@@ -201,7 +201,12 @@ body {
     &__group {
         display: flex;
         gap: 26px;
-
+        .btn{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            height: 53px;
+        }
         &_contact {
             gap: 30px;
 
@@ -451,7 +456,12 @@ body {
     width: 1660px;
     margin: 0 auto;
 }
-
+.btn-ac {
+    padding: 50px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -466,9 +476,7 @@ body {
     transition: var(--transition);
     color: #fff;
     border: 2px solid var(--blue);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 120%;
+    
     &:hover {
         background: transparent;
         color: var(--blue);
@@ -491,6 +499,7 @@ body {
         }
     }
 }
+
 
 .hamburger {}
 
@@ -734,16 +743,45 @@ body {
 }
 
 .benefit {
-    &__title {}
-
-    &__item {}
-
-    &__desc {}
-
-    &__icon {}
+    position: relative;
+    &__title {
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        width: 30%;
+        line-height: 110%;
+    }
+    &__list {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        grid-template-areas: 
+                            '. item1 item2'
+                            'item3 item4 item5';
+        gap: 40px;
+    }
+    &__item{
+        border-radius: 16px;
+        padding: 40px 30px;
+        &:nth-child(1){grid-area: item1;background: #f2f6ff url(../img/benefit_1.svg) no-repeat right bottom;}
+        &:nth-child(2){grid-area: item2;background: #f2f6ff url(../img/benefit_2.svg) no-repeat right bottom;}
+        &:nth-child(3){grid-area: item3;background: #f2f6ff url(../img/benefit_3.svg) no-repeat right bottom;}
+        &:nth-child(4){grid-area: item4;background: #f2f6ff url(../img/benefit_4.svg) no-repeat right bottom;}
+        &:nth-child(5){grid-area: item5;background: #f2f6ff url(../img/benefit_5.svg) no-repeat right bottom;}
+    }
+    &__name {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+    &__desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        width: 80%;
+    }
 }
 
-.ac {}
+
 
 .step {
     &__title {}
