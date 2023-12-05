@@ -1023,6 +1023,26 @@ body {
   }
 }
 
+.review {
+  display: grid;
+  grid-template: 1fr/4fr 5fr;
+  gap: 20px;
+}
+.review__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+
+.review-gal {
+  width: 100%;
+}
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;
