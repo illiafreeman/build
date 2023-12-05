@@ -1329,6 +1329,9 @@ body {
 
 
 .footer {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 20px;
     &__logo {}
 
     &__contact {}
