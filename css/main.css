@@ -789,7 +789,7 @@ body {
   grid-template: 1fr/400px 400px 400px 400px;
 }
 .step__list_license.step__list .step__pic-wrap {
-  height: 270px;
+  height: 250px;
 }
 .step__list_license.step__list .step__item {
   padding-bottom: 70px;
@@ -810,6 +810,11 @@ body {
 }
 .step__list_license.step__list .step__item .step__pic {
   margin: 0;
+}
+.step__list_license.step__list .svg {
+  top: 72px;
+  right: auto;
+  left: 330px;
 }
 .step__item {
   position: relative;

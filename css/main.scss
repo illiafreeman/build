@@ -846,7 +846,7 @@ body {
         &_license.step__list{
             grid-template: 1fr / 400px 400px 400px 400px;
             .step__pic-wrap{
-                height: 270px;
+                height: 250px;
             }
             .step__item{
                 padding-bottom: 70px;
@@ -867,6 +867,11 @@ body {
                 .step__pic{
                     margin: 0;
                 }
+            }
+            .svg {
+                top: 72px;
+                right: auto;
+                left: 330px;
             }
         }
     }
