@@ -611,7 +611,14 @@ body {
     &__desc {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        //justify-content: space-between;
+        &_between{
+            justify-content: space-between;
+        }
+        &-pic{
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
     }
 }
 .intro {
@@ -1497,18 +1504,35 @@ body {
 }
 .table{
     &-wrap{
-
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
     }
     tr{
         &.tr{
             &_highlight{
                 td{
-                    
+                    background: #fff8f6;
+                }
+            }
+            &:last-child{
+                td{
+                    border-bottom: 0;
                 }
             }
         }
         td{
-            b
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 40px 30px;
+            font-weight: 400;
+            font-size: 20px;
+            b{
+                font-weight: 700;
+            }
+            &:last-child{
+                border-right: 0;
+            }
         }
     }
 }

@@ -547,7 +547,13 @@ body {
 .card__desc {
   display: flex;
   flex-direction: column;
+}
+.card__desc_between {
   justify-content: space-between;
+}
+.card__desc-pic {
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .intro {
@@ -1372,6 +1378,31 @@ body {
 }
 .contacts__val a:hover {
   color: var(--orange);
+}
+
+.table-wrap {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.table tr.tr_highlight td {
+  background: #fff8f6;
+}
+.table tr.tr:last-child td {
+  border-bottom: 0;
+}
+.table tr td {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 40px 30px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.table tr td b {
+  font-weight: 700;
+}
+.table tr td:last-child {
+  border-right: 0;
 }
 
 @media only screen and (max-width: 1280px) {
