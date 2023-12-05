@@ -94,13 +94,14 @@ $('.tabs-wrapper').each(function() {
 /*end tabs*/
 
 $('.gal').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    infinite: true,
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    //infinite: true,
     dots: true,
     centerMode: true,
     variableWidth: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    //fade: true,
 });
 
 

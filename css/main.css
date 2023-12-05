@@ -1456,9 +1456,19 @@ body {
 
 .slick-slide {
   width: 240px;
+  transition: var(--transition);
 }
-.slick-slide.slick-current {
+.slick-slide.slick-center {
   transform: scale(1.4);
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
 }
 
 @media only screen and (max-width: 1280px) {

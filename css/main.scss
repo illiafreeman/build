@@ -1600,12 +1600,19 @@ body {
 }
 .slick-slide{
     width: 240px;
-    &.slick-current{
-        transform: scale(1.4)
+    transition: var(--transition);
+    &.slick-center{
+        transform: scale(1.4);
+        //transition: var(--transition);
     }
 }
-
-
+.slick-list{
+    overflow: visible;
+}
+.slick-track{
+    display: flex;
+    gap: 20px;
+}
 
 
 
