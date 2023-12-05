@@ -785,6 +785,32 @@ body {
   top: 72px;
   right: 65px;
 }
+.step__list_license.step__list {
+  grid-template: 1fr/400px 400px 400px 400px;
+}
+.step__list_license.step__list .step__pic-wrap {
+  height: 270px;
+}
+.step__list_license.step__list .step__item {
+  padding-bottom: 70px;
+  justify-content: flex-start;
+}
+.step__list_license.step__list .step__item .step__info {
+  display: flex;
+  flex-direction: column;
+}
+.step__list_license.step__list .step__item .step__title {
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.step__list_license.step__list .step__item .step__desc {
+  font-weight: 400;
+  line-height: 150%;
+}
+.step__list_license.step__list .step__item .step__pic {
+  margin: 0;
+}
 .step__item {
   position: relative;
   background: #fff;
