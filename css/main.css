@@ -963,6 +963,10 @@ body {
   margin-bottom: 44px;
 }
 
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
 .team-gal {
   width: 100%;
 }
@@ -984,6 +988,41 @@ body {
 .team__desc {
   display: none;
 }
+.partner__wrap {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.partner__list {
+  display: flex;
+  gap: 20px;
+  min-width: 100%;
+  animation: scroll 28s linear infinite;
+  flex-shrink: 0;
+  justify-content: space-around;
+}
+.partner__item {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  width: 280px;
+  height: 140px;
+}
+.partner__item img {
+  max-width: 90%;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;

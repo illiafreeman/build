@@ -1044,6 +1044,8 @@ body {
 }
 
 .team {
+    background: #fff;
+    padding: 60px 0;
     &-gal {
         width: 100%;
     }
@@ -1088,11 +1090,41 @@ body {
 
 
 .partner {
-    &__title {}
-
-    &__list {}
-
-    &__item {}
+    &__wrap {
+        display: flex;
+        gap: 20px;
+        overflow: hidden;
+    }
+    &__list {
+        display: flex;
+        gap: 20px;
+        min-width: 100%;
+        animation: scroll 28s linear infinite;
+        flex-shrink: 0;
+        justify-content: space-around;
+    }
+    &__item {
+        background: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 280px;
+        width: 280px;
+        height: 140px;
+        
+        img{
+            max-width: 90%;
+        }
+    }
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-100% - 20px));
+        }
+    }
 }
 
 .review {
