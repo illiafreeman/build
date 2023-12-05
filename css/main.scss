@@ -1329,18 +1329,37 @@ body {
 
 
 .footer {
+    padding-bottom: 40px;
+    .card{
+        border-radius: 16px;
+        padding: 40px;
+    }
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr auto auto / 1.7fr 1.7fr 4.5fr;
+    //grid-auto-rows: minmax(30px, auto);
     gap: 20px;
-    &__logo {}
+    grid-template-areas: 
+	'logo contact contact'
+	'nav nav2 map'
+	'copy copy map';
+    &__logo {
+        grid-area: logo;
+    }
 
-    &__contact {}
+    &__contact {
+        grid-area: contact;
+    }
 
     &__desc {}
 
     &__contact-item {}
 
-    &__nav {}
+    &__nav {
+        grid-area: nav;
+        &_2{
+            grid-area: nav2;
+        }
+    }
 
     &__navlist {}
 
@@ -1348,18 +1367,28 @@ body {
 
     &__navlist-link {}
 
-    &__map {}
+    &__map {
+        grid-area: map;
+        .map{
+            width: 860px; 
+            height: 300px;
+        }
+    }
 
     &__map-desc {}
 
-    &__copy {}
+    &__copy.card {
+        grid-area: copy;
+        padding: 20px 30px;
+    }
 
-    &__copy-copy {}
+    &__copy-copy {
+        
+    }
 
     &__copy-dev {}
 }
 
-.map {}
 
 
 

@@ -1214,9 +1214,38 @@ body {
 }
 
 .footer {
+  padding-bottom: 40px;
   display: grid;
-  grid-template: 1fr/1fr 1fr;
+  grid-template: 1fr auto auto/1.7fr 1.7fr 4.5fr;
   gap: 20px;
+  grid-template-areas: "logo contact contact" "nav nav2 map" "copy copy map";
+}
+.footer .card {
+  border-radius: 16px;
+  padding: 40px;
+}
+.footer__logo {
+  grid-area: logo;
+}
+.footer__contact {
+  grid-area: contact;
+}
+.footer__nav {
+  grid-area: nav;
+}
+.footer__nav_2 {
+  grid-area: nav2;
+}
+.footer__map {
+  grid-area: map;
+}
+.footer__map .map {
+  width: 860px;
+  height: 300px;
+}
+.footer__copy.card {
+  grid-area: copy;
+  padding: 20px 30px;
 }
 @media only screen and (max-width: 1280px) {
   .container {
