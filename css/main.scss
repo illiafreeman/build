@@ -120,6 +120,8 @@ table td {
     --transition05: all 0.5s ease-in-out;
     --black: #202020;
     --blue: #2063cc;
+    --orange: #e8491f;
+    --orange-bg: #fee2db;
 }
 
 body {
@@ -470,13 +472,12 @@ body {
     border-radius: 29px;
     background: #2063cc;
     padding: 0 30px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     transition: var(--transition);
     color: #fff;
     border: 2px solid var(--blue);
-    
     &:hover {
         background: transparent;
         color: var(--blue);
@@ -492,10 +493,11 @@ body {
     }
     &_transparent {
         color: #fff;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         background: transparent;
         &:hover {
-            background: rgba(255, 255, 255, 0.3);;
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
         }
     }
 }
@@ -969,21 +971,59 @@ body {
     }
 }
 .join {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
     &__group {}
-    &__group-list {}
-    &__item {}
-    &__pic {}
-    &__desc {}
+    &__group-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__item {
+        background: #fff;
+        border-radius: 16px;
+        padding: 36px 30px;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    &__pic {
+        border-radius: 100%;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+        background: var(--orange-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__desc {
+        line-height: 120%;
+    }
 }
 
 
 
 .question {
-    &__body {}
-
-    &__head {}
-
-    &__desc {}
+    background: #2063cc;
+    border-radius: 16px;
+    padding: 40px 30px 30px;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+    &__head {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    &__desc {
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 44px;
+    }
 }
 
 .team {
