@@ -35,7 +35,6 @@ h6 {
 h1 {
   font-size: 60px;
   line-height: 110%;
-  margin-bottom: 152px;
 }
 
 h2 {
@@ -467,16 +466,13 @@ body {
   margin-bottom: 120px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-
 .grid {
   display: grid;
   gap: 20px;
   grid-template: 1fr/1fr 1fr;
+}
+.grid_card {
+  gap: 50px;
 }
 .grid__col_pic {
   height: 700px;
@@ -496,6 +492,9 @@ body {
   border-radius: 16px;
   background: #fff;
   padding: 50px;
+}
+.card h2 {
+  margin-bottom: 22px;
 }
 .card_inner {
   border-radius: 8px;
@@ -522,21 +521,17 @@ body {
 .card_alert .list__item {
   border-color: rgba(232, 73, 31, 0.3);
 }
-.card__pic {
-  border-radius: 8px;
-  overflow: hidden;
-}
 .card__pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 8px;
 }
 .card__desc {
   display: flex;
   flex-direction: column;
-  max-width: 720px;
-  flex: 1 0 720px;
+  justify-content: space-between;
 }
 .card__desc_gift h2 {
   flex-grow: 1;
@@ -547,31 +542,29 @@ body {
 
 .intro {
   display: grid;
-  grid-template-columns: 400px 400px auto;
-  grid-auto-rows: min-content;
-  height: 700px;
+  grid-template: auto auto/400px 400px auto;
   gap: 20px;
 }
 .intro__head {
   grid-row: 1/2;
   grid-column: 1/3;
-  width: 820px;
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .intro__pic {
   grid-row: 1/3;
   grid-column: 3/4;
   overflow: hidden;
   padding: 0;
+  height: 700px;
 }
 .intro__pic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.intro .card {
-  border-radius: 16px;
 }
 .intro__min {
   padding: 50px 130px 50px 40px;
