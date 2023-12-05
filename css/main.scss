@@ -1041,12 +1041,22 @@ body {
         line-height: 120%;
         margin-bottom: 44px;
     }
-    .btn{
-        
-    }
 }
 
 .team {
+    &-gal {}
+    .swiper{
+        &-wrapper {}
+        &-slide {
+            width: 250px;
+            &-active{
+                //width: 400px;
+            }
+        }
+        &-button {}
+        &-button-prev {}
+        &-button-next {}
+    }
     &__pic {}
 
     &__desc {}
@@ -1056,15 +1066,6 @@ body {
     &__pos {}
 }
 
-.team-gal {}
-
-.swiper-wrapper {}
-
-.swiper-slide {}
-
-.swiper-button-prev {}
-
-.swiper-button-next {}
 
 .partner {
     &__title {}

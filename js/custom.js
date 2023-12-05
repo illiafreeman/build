@@ -2,6 +2,7 @@
 /*team carousel*/
 const teamGal = new Swiper('.team-gal', {
     slidesPerView: 'auto',
+    centeredSlides: true,
     spaceBetween: 30,
     freeMode: true,
     loop: true,
