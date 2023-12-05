@@ -963,8 +963,26 @@ body {
   margin-bottom: 44px;
 }
 
+.team-gal {
+  width: 100%;
+}
+.team .swiper {
+  overflow: visible;
+}
+.team .swiper-wrapper {
+  width: 100%;
+}
 .team .swiper-slide {
   width: 250px;
+}
+.team .swiper-slide-active {
+  transform: scale(1.4);
+}
+.team .swiper-slide-active .team__desc {
+  display: block;
+}
+.team__desc {
+  display: none;
 }
 @media only screen and (max-width: 1280px) {
   .container {

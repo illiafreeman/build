@@ -1044,24 +1044,44 @@ body {
 }
 
 .team {
-    &-gal {}
+    &-gal {
+        width: 100%;
+    }
     .swiper{
-        &-wrapper {}
+        overflow: visible;
+        &-wrapper {
+            width: 100%;
+        }
         &-slide {
             width: 250px;
+            //transform: scale(0.8);
             &-active{
-                //width: 400px;
+                transform: scale(1.4);
+                //transition: var(--transition);
+                //height: 650px;
+                .team__pic{
+                    //transform: scale(1.4);
+                }
+                .team__desc{
+                    display: block;
+                }
             }
         }
         &-button {}
         &-button-prev {}
         &-button-next {}
     }
-    &__pic {}
+    &__pic {
+        
+    }
 
-    &__desc {}
+    &__desc {
+        display: none;
+    }
 
-    &__name {}
+    &__name {
+        
+    }
 
     &__pos {}
 }

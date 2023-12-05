@@ -4,7 +4,8 @@ const teamGal = new Swiper('.team-gal', {
     slidesPerView: 'auto',
     centeredSlides: true,
     spaceBetween: 30,
-    freeMode: true,
+    //slideToClickedSlide: true,
+    //freeMode: true,
     loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
