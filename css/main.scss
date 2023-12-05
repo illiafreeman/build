@@ -17,7 +17,9 @@ label:focus {
     -moz-outline-style: none !important;
     text-decoration: none !important;
 }
-
+button{
+    cursor: pointer;
+}
 
 h1,
 h2,
@@ -46,7 +48,12 @@ h3{
 
 input,
 select,
-textarea {}
+textarea {
+    outline: none !important;
+    outline-style: none !important;
+    -moz-outline-style: none !important;
+    border: 0;
+}
 
 p {
     margin: 0 0 20px;
@@ -1237,33 +1244,87 @@ body {
     }
 }
 .form {
+    h2{
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+        line-height: 110%;
+        margin-bottom: 20px;
+        max-width: 70%;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    input, textarea{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #202020;
+        border-radius: 8px;
+        height: 60px;
+        background: #fff;
+        padding: 0 30px;
+        width: 100%;
+        border: 2px solid transparent;
+    }
+    input{
+        
+    }
+    textarea{
+        height: 120px;
+        padding: 20px 30px;
+    }
     border-radius: 16px;
     background: #2063cc;
     padding: 60px;
     color: #fff;
     &__inner {}
-    &__agree {}
+    &__action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p.form__agree {
+        margin: 0;
+        font-size: 16px;
+        line-height: 120%;
+    }
     .field-wrap {
     }
     .field {
-        &_05 {}
-        &__wrap {}
-        &__error {}
-        .error {
+        margin-bottom: 20px;
+        &_05 {
+            display: grid;
+            grid-template: 1fr / 1fr 1fr;
+            gap: 20px;
         }
-    }
-    h2{
+        &__wrap {
+            position: relative;
+            &.error {
+                .field__error{
+                    display: block;
+                    position: absolute;
+                    top: 19px;
+                    right: 30px;
+                    font-size: 13px;
+                    line-height: 120%;
+                    color: var(--orange);
+                }
+                input, textarea{
+                    border: 2px solid var(--orange);
+                }
+            }
+        }
+        &__error {
+            display: none;
+            color: var(--orange);
+            padding-top: 5px;
+        }
         
     }
-    p{
-
-    }
-    input{
-
-    }
-    textarea{
-        
-    }
+    
 }
 
 

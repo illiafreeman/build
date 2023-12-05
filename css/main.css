@@ -18,6 +18,10 @@ label:focus {
   text-decoration: none !important;
 }
 
+button {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +48,15 @@ h3 {
   line-height: 120%;
   letter-spacing: 0.03em;
   margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+  outline: none !important;
+  outline-style: none !important;
+  -moz-outline-style: none !important;
+  border: 0;
 }
 
 p {
@@ -1132,6 +1145,74 @@ body {
   padding: 60px;
   color: #fff;
 }
+.form h2 {
+  margin-bottom: 30px;
+}
+.form p {
+  font-size: 20px;
+  line-height: 110%;
+  margin-bottom: 20px;
+  max-width: 70%;
+}
+.form p:last-child {
+  margin-bottom: 0;
+}
+.form input, .form textarea {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #202020;
+  border-radius: 8px;
+  height: 60px;
+  background: #fff;
+  padding: 0 30px;
+  width: 100%;
+  border: 2px solid transparent;
+}
+.form textarea {
+  height: 120px;
+  padding: 20px 30px;
+}
+.form__action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form p.form__agree {
+  margin: 0;
+  font-size: 16px;
+  line-height: 120%;
+}
+.form .field {
+  margin-bottom: 20px;
+}
+.form .field_05 {
+  display: grid;
+  grid-template: 1fr/1fr 1fr;
+  gap: 20px;
+}
+.form .field__wrap {
+  position: relative;
+}
+.form .field__wrap.error .field__error {
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 30px;
+  font-size: 13px;
+  line-height: 120%;
+  color: var(--orange);
+}
+.form .field__wrap.error input, .form .field__wrap.error textarea {
+  border: 2px solid var(--orange);
+}
+.form .field__error {
+  display: none;
+  color: var(--orange);
+  padding-top: 5px;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;
