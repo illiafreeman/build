@@ -64,6 +64,9 @@ p {
   font-size: 20px;
   line-height: 150%;
 }
+p:last-child {
+  margin: 0;
+}
 
 img {
   line-height: 100%;
@@ -106,20 +109,20 @@ i {
 }
 
 table {
-  border: 1px solid #ccc;
+  border: 0;
   border-collapse: collapse;
-  margin: 12px 0 12px;
+  margin: 0;
   width: 100%;
 }
 
 table th {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 table th,
 table td {
-  border: 1px solid #ccc;
-  padding: 8px;
+  border: 0;
+  padding: 0;
 }
 
 :root {
@@ -473,6 +476,10 @@ body {
 }
 .grid_card {
   gap: 50px;
+  margin-bottom: 20px;
+}
+.grid_card:last-child {
+  margin-bottom: 0;
 }
 .grid__col_pic img {
   width: 100%;
@@ -529,9 +536,6 @@ body {
 }
 .card_alert .list__item {
   border-color: rgba(232, 73, 31, 0.3);
-}
-.card__pic {
-  max-height: 500px;
 }
 .card__pic img {
   width: 100%;
@@ -1123,6 +1127,10 @@ body {
 .list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+}
+.list:last-child {
+  margin-bottom: 0;
 }
 .list__item {
   padding: 22px 22px 22px 46px;
