@@ -532,7 +532,7 @@ body {
     }
     &__col{
         &_pic{
-            height: 700px;
+            //height: 700px;
             img{
                 width: 100%;
                 height: 100%;
@@ -542,7 +542,15 @@ body {
             }
         }
         &_desc{
-
+            position: relative;
+            &-title{
+                padding-bottom: 180px;
+                .pic{
+                    position: absolute;
+                    bottom: 50px;
+                    left: 50px;
+                }
+            }
         }
     }
 }

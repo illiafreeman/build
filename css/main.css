@@ -474,9 +474,6 @@ body {
 .grid_card {
   gap: 50px;
 }
-.grid__col_pic {
-  height: 700px;
-}
 .grid__col_pic img {
   width: 100%;
   height: 100%;
@@ -484,6 +481,18 @@ body {
   object-fit: cover;
   border-radius: 16px;
 }
+.grid__col_desc {
+  position: relative;
+}
+.grid__col_desc-title {
+  padding-bottom: 180px;
+}
+.grid__col_desc-title .pic {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
 .col_50 {
   width: 50%;
 }
