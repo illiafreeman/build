@@ -561,7 +561,15 @@ body {
             right: 40px;
         }
     }
-    &_alert {}
+    &_alert {
+        background: var(--orange-bg);
+        .why__card-title{
+            border-color: #ffb29d;
+        }
+        .list__item{
+            border-color: rgba(232, 73, 31, 0.3);
+        }
+    }
 
     &__pic {
         border-radius: 8px;
@@ -1151,22 +1159,67 @@ body {
 
 
 .why {
-    &__card {}
-
-    &__card-title {}
+    display: flex;
+    gap: 50px;
+    padding-top: 108px;
+    &__card {
+        width: 50%;
+        position: relative;
+        padding-top: 90px;
+    }
+    &__card-title {
+        background: #fff;
+        border: 3px solid #89b3f4;
+        border-radius: 8px;
+        padding: 24px 90px 24px 30px;
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        line-height: 120%;
+        position: absolute;
+        left: 40px;
+        top: 0;
+        transform: translateY(-50%);
+        height: 116px;
+    }
 
     &__card-img {}
 }
 
 .list {
+    display: flex;
+    flex-direction: column;
     &__item {
-        &_check {}
-
-        &_pos {}
-
-        &_cross {}
-
-        &_neg {}
+        padding: 22px 22px 22px 46px;
+        border-bottom: 1px solid rgba(32, 99, 204, 0.3);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        position: relative;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            top: 24px;
+            left: 0;
+        }
+        &:last-child{
+            border: 0;
+            padding-bottom: 0;
+        }
+        &_check {
+            &:after{
+                background: url(../img/icon_check_blue.svg) no-repeat center center;
+            }
+        }
+        &_cross {
+            &:after{
+                background: url(../img/icon_cross.svg) no-repeat center center;
+            }
+        }
     }
 }
 
