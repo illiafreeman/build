@@ -43,7 +43,7 @@ h3{
     font-size: 24px;
     line-height: 120%;
     letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 input,
@@ -532,7 +532,7 @@ body {
     }
     &__col{
         &_pic{
-            //height: 700px;
+            //max-height: 600px;
             img{
                 width: 100%;
                 height: 100%;
@@ -571,11 +571,9 @@ body {
         border-radius: 8px;
         padding: 40px;
     }
-
     &_info {
         background: #f2f6ff;
     }
-
     &_pic {
         position: relative;
         padding-right: 200px;
@@ -594,9 +592,8 @@ body {
             border-color: rgba(232, 73, 31, 0.3);
         }
     }
-
     &__pic {
-        
+        max-height: 500px;
         img{
             width: 100%;
             height: 100%;
@@ -604,19 +601,11 @@ body {
             border-radius: 8px;
         }
     }
-
     &__desc {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        &_gift{
-            h2{
-                flex-grow: 1;
-            }
-            p{
-                margin-bottom: 45px;
-            }
-        }
+        
     }
 }
 .intro {

@@ -46,7 +46,7 @@ h3 {
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0.03em;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 input,
@@ -530,6 +530,9 @@ body {
 .card_alert .list__item {
   border-color: rgba(232, 73, 31, 0.3);
 }
+.card__pic {
+  max-height: 500px;
+}
 .card__pic img {
   width: 100%;
   height: 100%;
@@ -541,12 +544,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.card__desc_gift h2 {
-  flex-grow: 1;
-}
-.card__desc_gift p {
-  margin-bottom: 45px;
 }
 
 .intro {
