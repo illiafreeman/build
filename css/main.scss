@@ -968,14 +968,15 @@ body {
         
     }
 }
-
 .join {
+    &__group {}
+    &__group-list {}
     &__item {}
-
     &__pic {}
-
     &__desc {}
 }
+
+
 
 .question {
     &__body {}
