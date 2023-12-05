@@ -599,6 +599,9 @@ body {
             border-color: rgba(232, 73, 31, 0.3);
         }
     }
+    &_tab {
+        margin-top: 77px;
+    }
     &__pic {
         //надо max-height: 500px;
         img{
@@ -1210,7 +1213,8 @@ body {
     &__card {
         width: 50%;
         position: relative;
-        padding-top: 90px;
+        padding-top: 74px;
+
     }
     &__card-title {
         background: #fff;
@@ -1545,14 +1549,55 @@ body {
 .tabs-wrapper {
 }
 .tabs {
+    display: flex;
+    gap: 10px;
+    margin-top: -85px;
 }
 .tab {
+    border: 2px solid #ffb29d;
+    border-radius: 8px;
+    height: 90px;
+    font-size: 24px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    cursor: pointer;
+    background: #fff;
+    &.active{
+        background: var(--orange);
+        border: 2px solid var(--orange);
+        color: #fff;
+    }
 }
 .tabs-content {
+    padding-top: 40px;
 }
 .tab-item {
-}
+    .list__item{
+        &:first-child{
+            padding-top: 0;
+            &:after{
+                top: 2px;
+            }
+        }
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    p:last-child{
+        margin: 0;
+    }
 
+}
+.tab-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--orange);
+    margin-bottom: 30px;
+}
 
 
 
