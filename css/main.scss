@@ -1222,12 +1222,50 @@ body {
         }
     }
 }
-
+.formwrap{
+    display: grid;
+    grid-template: 1fr / 3fr 5fr;
+    gap: 20px;
+    &__pic{
+        border-radius: 16px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
 .form {
+    border-radius: 16px;
+    background: #2063cc;
+    padding: 60px;
+    color: #fff;
+    &__inner {}
     &__agree {}
+    .field-wrap {
+    }
+    .field {
+        &_05 {}
+        &__wrap {}
+        &__error {}
+        .error {
+        }
+    }
+    h2{
+        
+    }
+    p{
+
+    }
+    input{
+
+    }
+    textarea{
+        
+    }
 }
 
-.df {}
 
 .footer {
     &__logo {}

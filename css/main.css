@@ -1110,6 +1110,28 @@ body {
   background: url(../img/icon_cross.svg) no-repeat center center;
 }
 
+.formwrap {
+  display: grid;
+  grid-template: 1fr/3fr 5fr;
+  gap: 20px;
+}
+.formwrap__pic {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.formwrap__pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form {
+  border-radius: 16px;
+  background: #2063cc;
+  padding: 60px;
+  color: #fff;
+}
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;
