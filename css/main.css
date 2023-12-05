@@ -1454,6 +1454,13 @@ body {
   margin-bottom: 30px;
 }
 
+.slick-slide {
+  width: 240px;
+}
+.slick-slide.slick-current {
+  transform: scale(1.4);
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;

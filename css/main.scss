@@ -1598,7 +1598,12 @@ body {
     color: var(--orange);
     margin-bottom: 30px;
 }
-
+.slick-slide{
+    width: 240px;
+    &.slick-current{
+        transform: scale(1.4)
+    }
+}
 
 
 

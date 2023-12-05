@@ -2,9 +2,9 @@
 /*team carousel*/
 const teamGal = new Swiper('.team-gal', {
     slidesPerView: 'auto',
-    centeredSlides: true,
+    //centeredSlides: true,
     spaceBetween: 30,
-    //slideToClickedSlide: true,
+    slideToClickedSlide: true,
     //freeMode: true,
     loop: true,
     navigation: {
@@ -92,3 +92,16 @@ $('.tabs-wrapper').each(function() {
     }).eq(0).addClass('active');
 });
 /*end tabs*/
+
+$('.gal').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    centerMode: true,
+    variableWidth: true,
+    focusOnSelect: true
+});
+
+
+
