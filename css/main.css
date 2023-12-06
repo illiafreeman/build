@@ -1821,4 +1821,32 @@ body {
   .services__link-desc {
     font-size: 13px;
   }
+  .benefit__list {
+    display: flex;
+    overflow: auto;
+    margin: 0 -40px;
+    padding: 0 40px;
+    gap: 20px;
+  }
+  .benefit__title {
+    position: static;
+    width: 100%;
+  }
+  .benefit__item {
+    padding: 20px;
+    width: 280px;
+    min-width: 280px;
+    background-size: 80px auto !important;
+  }
+  .benefit__name {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .benefit__desc {
+    font-size: 13px;
+    width: 80%;
+  }
+  .btn-ac {
+    padding: 20px 0 0;
+  }
 }/*# sourceMappingURL=main.css.map */
