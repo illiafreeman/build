@@ -2022,4 +2022,13 @@ body {
   .question__body {
     padding-right: 56px;
   }
+  .team {
+    padding: 20px 0 100px;
+  }
+  .team h2 {
+    margin-bottom: 90px;
+  }
+  .team .slick-slide.slick-center .team__desc {
+    left: 232px;
+  }
 }/*# sourceMappingURL=main.css.map */
