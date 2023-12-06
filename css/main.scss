@@ -269,22 +269,16 @@ body {
         &.parent {
             position: relative;
 
-            >svg {
-                fill: var(--black);
-                position: absolute;
-                top: 19px;
-                right: 16px;
-                transition: (var(--transition));
-                pointer-events: none;
-                width: 7px;
-                height: 4px;
-            }
+            
 
             &:hover {
-                >svg {
-                    fill: var(--blue);
-                    transform: rotate(180deg);
+                >.header__nav-parent{
+                    >svg {
+                        fill: var(--blue);
+                        transform: rotate(180deg);
+                    }
                 }
+                
 
                 >.header__subnav-wrap {
                     opacity: 1;
@@ -296,6 +290,17 @@ body {
             .header__nav-parent {
                 padding-right: 32px;
                 cursor: default;
+                position: relative;
+                >svg {
+                    fill: var(--black);
+                    position: absolute;
+                    top: 19px;
+                    right: 16px;
+                    transition: (var(--transition));
+                    pointer-events: none;
+                    width: 7px;
+                    height: 4px;
+                }
             }
         }
 

@@ -98,7 +98,7 @@ $('.tabs-wrapper').each(function() {
 
 $('.header__menu-btn').click(function () {
     //alert('sss');
-    $('.header-navgroup').toggleClass('vis');
+    $('.header__nav-wrap').toggleClass('vis');
     $('body').toggleClass('oh');
     $('.hamburger').toggleClass('open');
 });
