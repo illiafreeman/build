@@ -151,7 +151,7 @@ body {
     font-variant-numeric: lining-nums proportional-nums;
 }
 
-.svg {
+.svg, .svg_min {
 
     // width: 50vw;
     // height: 900px;
@@ -1766,7 +1766,9 @@ body {
 .header__menu-btn{
     border: 2px solid var(--orange);
 }
-
+.svg_min{
+    display: none;
+}
 
 
 
