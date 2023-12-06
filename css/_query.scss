@@ -1,14 +1,99 @@
 
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1700px) {
+
     .container {
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
     }
+    .header__tel{
+        display: none;
+    }
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
+@media only screen and (max-width: 1024px) {
+    .header__container{
+        height: 64px;
+        align-items: center;
+    }
+    .main {
+        padding-top: 64px;
+      }
+    .header__logo {
+        display: block;
+        height: 35px;
+        img{
+            height: 100%;
+        }
+    }
+    .card {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        height: 40px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+    .header__nav-wrap{
+        display: none;
+    }
+    .header__group_contact{
+        gap: 4px;
+        .header__tel, .btn{
+            display: none;
+        }
+    }
+    .header__tel-btn, .header__menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 
+
+
+
+
+
+}
 
 
 

@@ -91,6 +91,12 @@ $('.tabs-wrapper').each(function() {
 });
 /*end tabs*/
 
+$('.header__menu-btn').click(function () {
+    //alert('sss');
+    $('.header-navgroup').toggleClass('vis');
+    $('body').toggleClass('oh');
+    $('.hamburger').toggleClass('open');
+});
 
 
 
