@@ -433,12 +433,22 @@
     .team .slick-slide.slick-center .team__desc {
         left: 232px;
     }
-
-
-
-
-
-
+    .review {
+        display: flex;
+        flex-direction: column;
+    }
+    .review__text {
+        font-size: 13px;
+    }
+    .swiper-button-prev{
+        left: 0;
+    }
+    .swiper-button-next{
+        right: 0;
+    }
+    .review-gal__desc {
+        font-size: 13px;
+    }
 
 
 }
