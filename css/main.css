@@ -2224,4 +2224,8 @@ body {
     position: static;
     padding-left: 20px;
   }
+  .header__nav-wrap .header__nav-item.parent.vis .header__nav-parent > svg, .header__nav-wrap .header__subnav-item.parent.vis .header__subnav-parent > svg {
+    fill: var(--blue);
+    transform: rotate(180deg);
+  }
 }/*# sourceMappingURL=main.css.map */

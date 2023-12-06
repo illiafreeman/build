@@ -626,6 +626,10 @@
             position: static;
             padding-left: 20px;
         }
+        .header__nav-item.parent.vis .header__nav-parent > svg, .header__subnav-item.parent.vis .header__subnav-parent > svg  {
+            fill: var(--blue);
+            transform: rotate(180deg);
+        }
     }
 
 
