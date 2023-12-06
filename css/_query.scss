@@ -9,14 +9,38 @@
     .header__tel{
         display: none;
     }
-
-    
-    
-
-
-
-
-
+    .services__link-desc {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .services__link-inner {
+        padding: 30px;
+    }
+    .step {
+        display: block;
+    }
+    .step__list{
+        width: 1230px;
+        margin: 0 auto;
+    }
+    .step__title{
+        text-align: center;
+    }
+    .form p {
+        max-width: 400px;
+    }
+    .footer__map .map {
+        width: 100%;
+        height: 340px;
+    }
+    .footer {
+        grid-template: 1fr auto auto/1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "logo logo contact contact contact contact contact contact" 
+        "nav nav nav2 nav2 map map map map" 
+        "copy copy copy copy map map map map";
+        padding-bottom: 20px;
+    }
 
 
 
