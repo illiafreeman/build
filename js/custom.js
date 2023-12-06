@@ -99,7 +99,7 @@ $('.tabs-wrapper').each(function() {
 $('.header__menu-btn').click(function () {
     //alert('sss');
     $('.header__nav-wrap').toggleClass('vis');
-    $('body').toggleClass('oh');
+    $('body').toggleClass('oh open-menu');
     $('.hamburger').toggleClass('open');
 });
 $('.header__nav-parent, .header__subnav-parent').click(function () {
