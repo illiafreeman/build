@@ -449,7 +449,104 @@
     .review-gal__desc {
         font-size: 13px;
     }
-
+    .why__card-title {
+        border-width: 2px;
+        border-radius: 16px;
+        padding: 10px 20px;
+        gap: 10px;
+        font-size: 16px;
+        line-height: 120%;
+        left: 20px;
+        height: 68px;
+    }
+    .why__card-img{
+        width: 40px;
+    }
+    .list__item {
+        padding: 20px 0 20px 40px;
+        border-bottom: 1px solid rgba(32, 99, 204, 0.3);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+        position: relative;
+        &:last-child{
+            &:after{
+                top: calc(50% + 10px);
+            }
+        }
+    }
+    .list__item::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        margin-top: -10px;
+        background-size: 20px 20px !important;
+    }      
+    .why {
+        gap: 20px;
+        padding-top: 40px;
+    }
+    .formwrap{
+        display: block;
+    }
+    .formwrap__pic{
+        display: none;
+    }
+    .form {
+        padding: 20px;
+    }
+    .form h2 {
+        margin-bottom: 20px;
+    }
+    .form p {
+        font-size: 13px;
+    }
+    .form input, .form textarea {
+        font-size: 13px;
+        height: 48px;
+        padding: 0 16px;
+    }
+    .form textarea{
+        padding: 16px;
+    }
+    .form .field__wrap.error .field__error {
+        top: 11px;
+        right: 15px;
+    }
+    .form p.form__agree {
+        font-size: 13px;
+    }
+    .footer .card {
+        padding: 20px;
+    }
+    .footer__desc {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .footer__contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .footer__navlist-link {
+        font-size: 13px;
+        line-height: 1.2;
+        display: inline-block;
+    }
+    .footer__navlist {
+        gap: 10px;
+    }
+    .footer__copy.card {
+        padding: 20px;
+        font-size: 13px;
+    }
+    .footer__map-desc {
+        gap: 20px;
+        font-size: 13px;
+    }
 
 }
 
