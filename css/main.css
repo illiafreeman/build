@@ -1922,4 +1922,42 @@ body {
     font-size: 13px;
     line-height: 140%;
   }
+  .help__pic {
+    margin: 0;
+    border-radius: 0;
+  }
+  .help__pic img {
+    border-radius: 16px;
+  }
+  .help__title {
+    position: static;
+    font-size: 18px;
+    line-height: 110%;
+    color: #202020;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .step__title {
+    text-align: left;
+  }
+  .help__list {
+    padding: 0 20px;
+    margin-top: -68px;
+  }
+  .help__item {
+    padding: 20px;
+  }
+  .help__head {
+    display: block;
+    height: 13px;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+  .help__body {
+    height: 34px;
+    font-size: 30px;
+  }
+  .help__desc {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */
