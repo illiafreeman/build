@@ -8,7 +8,12 @@ $('.team__gal').slick({
     centerMode: true,
     variableWidth: true,
     focusOnSelect: true,
-    //fade: true,
+    prevArrow: `<button class="slick-prev" aria-label="Previous" type="button">
+                                <img src="./img/icon_chevron.svg" alt=""> 
+                            </button>`,
+                nextArrow: `<button class="slick-next" aria-label="Next" type="button">
+                                <img src="./img/icon_chevron.svg" alt="">
+                            </button>`,
 });
 /*end team carousel*/
 
