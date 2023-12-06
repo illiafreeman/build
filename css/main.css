@@ -2125,7 +2125,7 @@ body {
   .footer__contact-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
   .footer__navlist-link {
     font-size: 13px;
@@ -2142,5 +2142,8 @@ body {
   .footer__map-desc {
     gap: 20px;
     font-size: 13px;
+  }
+  .footer__contact-item {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
