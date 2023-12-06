@@ -1643,7 +1643,18 @@ body {
     padding: 0 20px;
   }
   .header__tel {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 20px;
+    padding: 20px;
   }
   .services__link-desc {
     font-size: 16px;
@@ -1728,7 +1739,7 @@ body {
   .header__group_contact {
     gap: 4px;
   }
-  .header__group_contact .header__tel, .header__group_contact .btn {
+  .header__group_contact .btn {
     display: none;
   }
   .header__tel-btn, .header__menu-btn {
@@ -2297,5 +2308,10 @@ body {
     bottom: 0px;
     left: 20px;
     right: 20px;
+  }
+  .header__tel.vis {
+    top: 64px;
+    opacity: 1;
+    visibility: visible;
   }
 }/*# sourceMappingURL=main.css.map */

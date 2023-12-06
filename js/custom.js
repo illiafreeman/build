@@ -97,14 +97,17 @@ $('.tabs-wrapper').each(function() {
 /*end tabs*/
 
 $('.header__menu-btn').click(function () {
-    //alert('sss');
     $('.header__nav-wrap').toggleClass('vis');
     $('body').toggleClass('oh open-menu');
     $('.hamburger').toggleClass('open');
+    $('.header__tel').removeClass('vis');
 });
 $('.header__nav-parent, .header__subnav-parent').click(function () {
     $(this).toggleClass('vis');
 });
-
+$('.header__tel-btn').click(function () {
+    $('.header__tel').toggleClass('vis');
+    $('body').toggleClass('open-menu');
+});
 
 
