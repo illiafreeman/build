@@ -1138,7 +1138,7 @@ body {
             }
         }
         .slick-dots{
-            display: none;
+            display: none !important;
         }
         .slick-prev{
             right: 60px;

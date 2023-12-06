@@ -1057,7 +1057,7 @@ body {
   transform: translateX(3px);
 }
 .team__gal .slick-dots {
-  display: none;
+  display: none !important;
 }
 .team__gal .slick-prev {
   right: 60px;
