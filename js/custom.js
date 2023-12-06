@@ -102,7 +102,9 @@ $('.header__menu-btn').click(function () {
     $('body').toggleClass('oh');
     $('.hamburger').toggleClass('open');
 });
-
+$('.header__nav-parent, .header__subnav-parent').click(function () {
+    $(this).toggleClass('vis');
+});
 
 
 
