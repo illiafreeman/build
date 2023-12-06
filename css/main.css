@@ -952,7 +952,13 @@ body {
 
 .join {
   display: grid;
-  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  grid-template: auto auto/1fr 1fr 1fr;
+  gap: 20px;
+  grid-column: 1/4;
+}
+.join-wrap {
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr 1fr;
   gap: 20px;
 }
 .join__group-list {
@@ -983,6 +989,7 @@ body {
 }
 
 .question {
+  grid-column: 4/5;
   background: #2063cc;
   border-radius: 16px;
   padding: 40px 30px 30px;
@@ -1569,6 +1576,9 @@ body {
     grid-template: 1fr auto auto/1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "logo logo contact contact contact contact contact contact" "nav nav nav2 nav2 map map map map" "copy copy copy copy map map map map";
     padding-bottom: 20px;
+  }
+  .join__item {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 1024px) {

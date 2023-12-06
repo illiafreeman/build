@@ -1028,8 +1028,14 @@ body {
 }
 .join {
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    grid-template: auto auto / 1fr 1fr 1fr;
     gap: 20px;
+    grid-column: 1 / 4;
+    &-wrap{
+        display: grid;
+        grid-template: auto/ 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
     &__group {}
     &__group-list {
         display: flex;
@@ -1062,6 +1068,7 @@ body {
 
 
 .question {
+    grid-column: 4 / 5;
     background: #2063cc;
     border-radius: 16px;
     padding: 40px 30px 30px;
