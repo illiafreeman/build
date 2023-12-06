@@ -258,6 +258,8 @@
         width: auto;
         display: flex;
         overflow: auto;
+        margin: 0 -20px;
+        padding: 0 20px;
         .svg{
             display: none;
         }
@@ -265,7 +267,7 @@
             display: block;
             position: absolute;
             top: 72px;
-            left: 209px;
+            left: 229px;
             z-index: 100;
             svg{
                 width: 1500px;
@@ -361,16 +363,67 @@
     .help__desc {
         font-size: 13px;
     }
-
-
-
-
-
-
-
-
-
-
+    .need__item {
+        padding: 20px 60px 20px 20px;
+        font-size: 13px;
+    }
+    .need__item::after {
+        width: 20px;
+        height: 20px;
+        background: url(../img/icon_check_orange.svg) no-repeat center center / 20px 20px;
+        top: 50%;
+        right: 22px;
+        margin-top: -10px;
+    }
+    .join-wrap {
+        display: flex;
+        margin: 0 -20px;
+        padding: 0 20px;
+        overflow: auto;
+        align-items: stretch;
+        
+    }
+    .join__item {
+        width: 322px;   
+        min-width: 322px; 
+        gap: 26px;  
+        font-size: 15px;
+        line-height: 120%
+    }
+    .join__pic {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    .question {
+        padding: 20px;
+        width: 322px;   
+        min-width: 322px;
+        justify-content: space-between;
+        height: auto;
+    }
+    .question__head {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .question__desc {
+        font-size: 14px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+    .question__body::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-size: 20px 20px !important;
+        top: -5px;
+        right: -5px;
+    }
+    .question__body {
+        padding-right: 56px;
+    }
 
 
 
