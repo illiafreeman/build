@@ -1,16 +1,14 @@
 
 /*team carousel*/
-const teamGal = new Swiper('.team-gal', {
-    slidesPerView: 'auto',
-    //centeredSlides: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    //freeMode: true,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
+$('.team__gal').slick({
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    //infinite: true,
+    dots: true,
+    centerMode: true,
+    variableWidth: true,
+    focusOnSelect: true,
+    //fade: true,
 });
 /*end team carousel*/
 
@@ -93,16 +91,7 @@ $('.tabs-wrapper').each(function() {
 });
 /*end tabs*/
 
-$('.gal').slick({
-    slidesToShow: 8,
-    slidesToScroll: 8,
-    //infinite: true,
-    dots: true,
-    centerMode: true,
-    variableWidth: true,
-    focusOnSelect: true,
-    //fade: true,
-});
+
 
 
 
