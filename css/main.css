@@ -191,6 +191,7 @@ body {
   transition: var(--transition);
   z-index: 100;
   background: #F2F6FF;
+  z-index: 1000;
 }
 .header.fixed {
   border-radius: 0px 0px 16px 16px;
@@ -2163,6 +2164,7 @@ body {
     font-size: 16px;
   }
   .header__nav-wrap {
+    align-items: flex-start;
     transition: var(--transition);
     position: fixed;
     top: 0;
@@ -2186,6 +2188,7 @@ body {
     visibility: visible;
     position: static;
     margin-top: 20px;
+    margin-left: 20px;
     font-size: 13px;
     height: 40px;
     min-height: 40px;
@@ -2228,6 +2231,7 @@ body {
     transform: none;
     max-width: none;
     min-width: auto;
+    overflow: hidden;
   }
   .header__nav-wrap .header__nav-item.parent .header__subnav {
     padding: 0;
@@ -2309,9 +2313,13 @@ body {
     left: 20px;
     right: 20px;
   }
-  .header__tel.vis {
-    top: 64px;
+  .header .header__tel.vis {
+    top: 56px;
     opacity: 1;
     visibility: visible;
+    border-radius: 16px;
+  }
+  .header.fixed .header__tel.vis {
+    background: #fff;
   }
 }/*# sourceMappingURL=main.css.map */

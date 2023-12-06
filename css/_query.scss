@@ -562,7 +562,7 @@
         font-size: 16px;
     }
     .header__nav-wrap{
-        
+        align-items: flex-start;
         transition: var(--transition);
         position: fixed;
         top: 0;
@@ -584,6 +584,7 @@
                 visibility: visible;
                 position: static;
                 margin-top: 20px;
+                margin-left: 20px;
                 font-size: 13px;
                 height: 40px;
                 min-height: 40px;
@@ -626,6 +627,7 @@
                 transform: none;
                 max-width: none;
                 min-width: auto;
+                overflow: hidden;
             }
             .header__subnav{
                 padding: 0;
@@ -715,11 +717,22 @@
         }
     }
 }
-.header__tel.vis{
-    top: 64px;
-    opacity: 1;
-    visibility: visible;
+.header{
+    .header__tel.vis{
+        top: 56px;
+        opacity: 1;
+        visibility: visible;
+        //box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
+        border-radius: 16px;
+    }
+    &.fixed{
+        .header__tel.vis{
+            background: #fff;
+            
+        }
+    }
 }
+
 
 
 

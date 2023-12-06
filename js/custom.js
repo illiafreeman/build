@@ -107,7 +107,6 @@ $('.header__nav-parent, .header__subnav-parent').click(function () {
 });
 $('.header__tel-btn').click(function () {
     $('.header__tel').toggleClass('vis');
-    $('body').toggleClass('open-menu');
 });
 
 
