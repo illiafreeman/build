@@ -9,7 +9,7 @@ $('.team__gal').slick({
     variableWidth: true,
     focusOnSelect: true,
     prevArrow: `<button class="slick-prev" aria-label="Previous" type="button">
-                                <img src="./img/icon_chevron.svg" alt=""> 
+                                <img src="./img/icon_chevron_left.svg" alt=""> 
                             </button>`,
                 nextArrow: `<button class="slick-next" aria-label="Next" type="button">
                                 <img src="./img/icon_chevron.svg" alt="">
