@@ -58,6 +58,21 @@
     .team h2{
         margin-bottom: 120px;
     }
+    .tab {
+        border: 2px solid #ffb29d;
+        border-radius: 8px;
+        height: 60px;
+        font-size: 16px;
+        line-height: 120%;
+        padding: 0 20px;
+        white-space: nowrap;
+    }
+    .tabs {
+        margin-top: -68px;
+        overflow: auto;
+        margin-right: -40px;
+        padding-right: 40px;
+    }
 }
 
 
@@ -733,6 +748,31 @@
 .contacts__val {
     font-size: 16px;
     line-height: 140%;
+}
+.tabs {
+    margin-top: -50px;
+}
+.tabs-content {
+    padding-top: 20px;
+}
+.tab-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.tab-item p {
+    margin-bottom: 20px;
+}
+
+.card_tab {
+    .list {
+        margin-bottom: 40px;
+    }
+    .list .list__item:first-child {
+        padding-top: 0;
+        &:after{
+            margin-top: -20px;
+        }
+    }
 }
 }
 @media only screen and (max-width: 768px) {
