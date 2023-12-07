@@ -2304,7 +2304,7 @@ body {
   .header__nav-wrap.vis .btn {
     opacity: 1;
     visibility: visible;
-    position: static;
+    position: relative;
     margin-top: 20px;
     margin-left: 20px;
     font-size: 13px;
