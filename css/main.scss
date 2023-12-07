@@ -1190,15 +1190,14 @@ body {
             right: 0;
             padding: 0;
             transition: var(--transition);
-            img{
-                width: 8px;
-                height: 14px;
+            svg{
+                stroke: var(--black);
                 transition: var(--transition);
-                position: relative;
             }
             &:hover{
-                img{
-                    transform: translateX(3px);
+                border-color: var(--blue);
+                svg{
+                    stroke: var(--blue);
                 }
             }
         }
@@ -1207,13 +1206,6 @@ body {
         }
         .slick-prev{
             right: 60px;
-            img{
-            }
-            &:hover{
-                img{
-                    transform: translateX(-3px);
-                }
-            }
         }
     }
     &__desc{
@@ -1351,25 +1343,47 @@ body {
             position: absolute;
             padding: 0;
             transition: var(--transition);
-            img{
+            overflow: hidden;
+            svg{
+                stroke: var(--black);
+                transition: var(--transition);
                 width: 8px;
                 height: 14px;
-                transition: var(--transition);
-                position: relative;
+                margin: -7px 0 0 -4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                &:last-child{
+                    left: 150%;
+                }
             }
             &:after{
                 display: none;
             }
             &:hover{
-                img{
-                    transform: translateX(3px);
+                border-color: var(--blue);
+                svg{
+                    stroke: var(--blue);
+                    left: -50%;
+                    &:last-child{
+                        left: 50%;
+                    }
                 }
             }
         }
-        .swiper-button-prev{
+        .swiper-button-next{
+            svg{
+                left: 50%;
+                &:last-child{
+                    left: -50%;
+                }
+            }
             &:hover{
-                img{
-                    transform: translateX(-3px);
+                svg{
+                    left: 150%;
+                    &:last-child{
+                        left: 50%;
+                    }
                 }
             }
         }

@@ -1103,23 +1103,21 @@ body {
   padding: 0;
   transition: var(--transition);
 }
-.team__gal .slick-prev img, .team__gal .slick-next img {
-  width: 8px;
-  height: 14px;
+.team__gal .slick-prev svg, .team__gal .slick-next svg {
+  stroke: var(--black);
   transition: var(--transition);
-  position: relative;
 }
-.team__gal .slick-prev:hover img, .team__gal .slick-next:hover img {
-  transform: translateX(3px);
+.team__gal .slick-prev:hover, .team__gal .slick-next:hover {
+  border-color: var(--blue);
+}
+.team__gal .slick-prev:hover svg, .team__gal .slick-next:hover svg {
+  stroke: var(--blue);
 }
 .team__gal .slick-dots {
   display: none !important;
 }
 .team__gal .slick-prev {
   right: 60px;
-}
-.team__gal .slick-prev:hover img {
-  transform: translateX(-3px);
 }
 .team__desc {
   opacity: 0;
@@ -1243,21 +1241,45 @@ body {
   position: absolute;
   padding: 0;
   transition: var(--transition);
+  overflow: hidden;
 }
-.review-galwrap .swiper-button img {
+.review-galwrap .swiper-button svg {
+  stroke: var(--black);
+  transition: var(--transition);
   width: 8px;
   height: 14px;
-  transition: var(--transition);
-  position: relative;
+  margin: -7px 0 0 -4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.review-galwrap .swiper-button svg:last-child {
+  left: 150%;
 }
 .review-galwrap .swiper-button:after {
   display: none;
 }
-.review-galwrap .swiper-button:hover img {
-  transform: translateX(3px);
+.review-galwrap .swiper-button:hover {
+  border-color: var(--blue);
 }
-.review-galwrap .swiper-button-prev:hover img {
-  transform: translateX(-3px);
+.review-galwrap .swiper-button:hover svg {
+  stroke: var(--blue);
+  left: -50%;
+}
+.review-galwrap .swiper-button:hover svg:last-child {
+  left: 50%;
+}
+.review-galwrap .swiper-button-next svg {
+  left: 50%;
+}
+.review-galwrap .swiper-button-next svg:last-child {
+  left: -50%;
+}
+.review-galwrap .swiper-button-next:hover svg {
+  left: 150%;
+}
+.review-galwrap .swiper-button-next:hover svg:last-child {
+  left: 50%;
 }
 .review-gal__desc {
   margin-top: 10px !important;
