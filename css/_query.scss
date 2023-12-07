@@ -773,7 +773,7 @@
         max-width: calc(100% - 200px);
     }
     .footer {
-        grid-template: auto auto auto auto auto auto/1fr;
+        grid-template: auto auto auto auto auto auto/100%;
         grid-template-areas:
             "logo" 
             "contact" 
