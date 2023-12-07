@@ -14,6 +14,18 @@ $('.team__gal').slick({
                 nextArrow: `<button class="slick-next" aria-label="Next" type="button">
                                 <img src="./img/icon_chevron.svg" alt="">
                             </button>`,
+    responsive: [
+        {
+            breakpoint: 780,
+            settings: {
+                centerMode: false,
+                variableWidth: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
+            }
+        }
+    ]
 });
 /*end team carousel*/
 
@@ -96,6 +108,7 @@ $('.tabs-wrapper').each(function() {
 });
 /*end tabs*/
 
+/*mobile header btns*/
 $('.header__menu-btn').click(function () {
     $('.header__nav-wrap').toggleClass('vis');
     $('body').toggleClass('oh open-menu');
@@ -108,5 +121,5 @@ $('.header__nav-parent, .header__subnav-parent').click(function () {
 $('.header__tel-btn').click(function () {
     $('.header__tel').toggleClass('vis');
 });
-
+/*end mobile header btns*/
 

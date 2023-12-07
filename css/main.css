@@ -1106,7 +1106,7 @@ body {
   overflow: hidden;
   border: 2px solid var(--orange);
 }
-.team .slick-slide.slick-center .team__pos {
+.team .slick-slide .team__pos {
   font-size: 12px;
 }
 .team .slick-list {
@@ -1710,6 +1710,9 @@ body {
   }
   .card {
     padding: 20px;
+  }
+  .why__card {
+    padding-top: 30px;
   }
   .intro__pic {
     padding: 0;
@@ -2321,5 +2324,119 @@ body {
   }
   .header.fixed .header__tel.vis {
     background: #fff;
+  }
+  .intro__min-desc {
+    font-size: 13px;
+    line-height: 120%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    grid-template: auto auto 1fr 1fr/1fr;
+  }
+  .intro__head {
+    grid-column: 1/2;
+  }
+  .intro__pic {
+    grid-column: 1/2;
+  }
+  .intro__min_pay {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .intro__min_spec {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  .intro__pic img {
+    height: 100%;
+  }
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template: auto auto/1fr;
+  }
+  .help__list {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+  }
+  .help__head {
+    height: auto;
+    margin: 0;
+  }
+  .help__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .why {
+    gap: 60px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .why__card {
+    width: 100%;
+  }
+  .form .field_05 {
+    grid-template: 1fr 1fr/1fr;
+    gap: 20px;
+  }
+  .form p {
+    max-width: calc(100% - 200px);
+  }
+  .footer {
+    grid-template: auto auto auto auto auto auto/1fr;
+    grid-template-areas: "logo" "contact" "nav" "nav2" "map" "copy";
+  }
+  .footer__copy.card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .footer__map-desc {
+    gap: 10px;
+    grid-template: 1fr 1fr/1fr;
+  }
+  .form__action {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form p {
+    max-width: none;
+  }
+  .help__list {
+    margin-top: -20px;
+  }
+  .team .slick-track {
+    margin-left: 0px;
+    gap: 20px;
+  }
+  .team .slick-slide {
+    width: 300px;
+    transform: none;
+    opacity: 1;
+  }
+  .team__desc {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    margin-top: 10px;
+  }
+  .team h2 {
+    margin-bottom: 20px;
+  }
+  .team .slick-list {
+    overflow: hidden;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .team {
+    padding: 20px 0;
   }
 }/*# sourceMappingURL=main.css.map */
