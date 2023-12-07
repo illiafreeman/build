@@ -1314,6 +1314,7 @@ body {
   transform: translateY(-50%);
   height: 116px;
 }
+
 .list {
   display: flex;
   flex-direction: column;
