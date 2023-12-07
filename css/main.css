@@ -683,6 +683,7 @@ body {
   position: relative;
   color: var(--black);
   height: 100%;
+  transition: var(--transition);
 }
 .services__link:after {
   content: "";
@@ -699,6 +700,12 @@ body {
   top: 40px;
   right: 40px;
 }
+.services__link:hover {
+  color: var(--blue);
+}
+.services__link:hover:before {
+  background: url(../img/icon_arrow_blue.svg) no-repeat center center;
+}
 .services__link_other {
   background: transparent;
   border: 2px solid var(--blue);
@@ -712,6 +719,10 @@ body {
 }
 .services__link_other::before {
   display: none;
+}
+.services__link_other:hover {
+  background-color: var(--blue);
+  color: #fff;
 }
 .services__link-inner {
   display: flex;

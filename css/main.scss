@@ -754,6 +754,7 @@ body {
         position: relative;
         color: var(--black);
         height: 100%;
+        transition: var(--transition);
         &:after {
             content: "";
             display: block;
@@ -769,6 +770,12 @@ body {
             top: 40px;
             right: 40px;
         }
+        &:hover{
+            color: var(--blue);
+            &:before{
+                background: url(../img/icon_arrow_blue.svg) no-repeat center center;
+            }
+        }
         &_other {
             background: transparent;
             border: 2px solid var(--blue);
@@ -781,6 +788,10 @@ body {
             color: var(--blue);
             &::before{
                 display: none;
+            }
+            &:hover{
+                background-color: var(--blue);
+                color: #fff;
             }
         }
         &-inner{
@@ -804,6 +815,7 @@ body {
             font-size: 20px;
             line-height: 130%;
         }
+        
     }
 }
 
