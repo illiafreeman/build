@@ -2108,6 +2108,11 @@ body {
   .formwrap {
     display: block;
   }
+  .formwrap_contact {
+    display: grid;
+    grid-template: auto auto/1fr;
+    gap: 20px;
+  }
   .formwrap__pic {
     display: none;
   }
@@ -2331,6 +2336,19 @@ body {
     min-height: 50px;
     display: flex;
     align-items: center;
+  }
+  .contacts__item {
+    margin-bottom: 10px;
+  }
+  .contacts h2 {
+    margin-bottom: 20px;
+  }
+  .contacts__name {
+    font-size: 13px;
+  }
+  .contacts__val {
+    font-size: 16px;
+    line-height: 140%;
   }
 }
 @media only screen and (max-width: 768px) {
