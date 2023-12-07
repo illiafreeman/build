@@ -153,7 +153,7 @@ body {
 .oh{
     overflow: hidden;
 }
-.svg, .svg_min {
+.svg, .svg_min, .license-svg {
 
     // width: 50vw;
     // height: 900px;
@@ -889,7 +889,8 @@ body {
                     margin: 0;
                 }
             }
-            .svg {
+            .license-svg {
+                position: absolute;
                 top: 72px;
                 right: auto;
                 left: 330px;

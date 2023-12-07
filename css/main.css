@@ -157,7 +157,7 @@ body {
   overflow: hidden;
 }
 
-.svg path, .svg_min path {
+.svg path, .svg_min path, .license-svg path {
   stroke-dasharray: 6;
   stroke-dashoffset: 1200;
   animation: dash 60s linear forwards infinite;
@@ -829,7 +829,8 @@ body {
 .step__list_license.step__list .step__item .step__pic {
   margin: 0;
 }
-.step__list_license.step__list .svg {
+.step__list_license.step__list .license-svg {
+  position: absolute;
   top: 72px;
   right: auto;
   left: 330px;
@@ -1672,6 +1673,15 @@ body {
     width: 1230px;
     margin: 0 auto;
   }
+  .step__list_license {
+    width: auto;
+    overflow: auto;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .step__list_license .step__title {
+    text-align: left;
+  }
   .step__title {
     text-align: center;
   }
@@ -2409,6 +2419,26 @@ body {
   }
   .grid__col_desc-title {
     padding-bottom: 70px;
+  }
+  .step__list_license.step__list .step__item .step__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .step__list_license.step__list .license-svg {
+    z-index: 100;
+    left: 349px;
+  }
+  .step__list_license.step__list .step__item {
+    width: 400px;
+    min-width: 400px;
+    padding: 20px 40px;
+    padding-bottom: 28px;
+  }
+  .step__list_license.step__list .step__item:nth-child(3) .step__pic-wrap {
+    margin-left: 15px;
+  }
+  .step__list_license.step__list .step__pic {
+    width: auto;
   }
 }
 @media only screen and (max-width: 768px) {
