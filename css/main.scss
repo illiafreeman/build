@@ -1214,6 +1214,7 @@ body {
         position: absolute;
         white-space: nowrap;
         transition: var(--transition05);
+        bottom: -20px;
     }
     &__pic {
         
@@ -1767,7 +1768,7 @@ body {
         &:first-child{
             padding-top: 0;
             &:after{
-                //top: 2px;
+                top: 2px;
             }
         }
     }

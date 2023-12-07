@@ -1125,6 +1125,7 @@ body {
   position: absolute;
   white-space: nowrap;
   transition: var(--transition05);
+  bottom: -20px;
 }
 .team .slick-slide {
   width: 240px;
@@ -1624,6 +1625,9 @@ body {
 
 .tab-item .list__item:first-child {
   padding-top: 0;
+}
+.tab-item .list__item:first-child:after {
+  top: 2px;
 }
 .tab-item p {
   margin-bottom: 30px;
@@ -2477,6 +2481,7 @@ body {
   }
   .list .list__item:first-child:after {
     margin-top: -20px;
+    top: 50%;
   }
   .table tr td {
     padding: 20px;
