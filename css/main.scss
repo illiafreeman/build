@@ -216,12 +216,6 @@ body {
     &__group {
         display: flex;
         gap: 26px;
-        .btn{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 120%;
-            height: 53px;
-        }
         &_contact {
             gap: 30px;
 
@@ -488,11 +482,10 @@ body {
     justify-content: center;
     height: 58px;
     border-radius: 29px;
-    background: var(--blue);
-    padding: 0 30px;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
+    padding: 0 30px;
     transition: var(--transition);
     color: #fff;
     border: 2px solid var(--blue);
@@ -510,19 +503,27 @@ body {
         width: 100%;
         height: 0;
         padding-top: 100%;
-        transform: translateY(100%);
+        //transform: translateY(100%);
         border-radius: 50%;
         transition: var(--transitionbtn);
         z-index: 10;
-        background: #fff;
+        background: var(--blue);
     }
     &:hover {
         span{
             color: var(--blue);
         }
         &:after{
-            transform: translateY(0);
+            transform: translateY(-100%);
         }
+    }
+    &_big{
+        font-weight: 600;
+    }
+    &_min{
+        height: 53px;
+        border-radius: 30px;
+        font-size: 16px;
     }
     &_invert {
         color: var(--blue);
@@ -530,6 +531,7 @@ body {
         background: transparent;
         &:after{
             background: var(--blue);
+            transform: translateY(100%);
         }
         &:hover {
             span{
@@ -544,9 +546,17 @@ body {
         color: #fff;
         border: 1px solid #fff;
         background: transparent;
-        &:hover {
+        &:after{
             background: rgba(255, 255, 255, 0.3);
-            color: #fff;
+            transform: translateY(100%);
+        }
+        &:hover {
+            span{
+                color: #fff;
+            }
+            &:after{
+                transform: translateY(0);
+            }
         }
     }
 }
