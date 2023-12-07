@@ -830,6 +830,19 @@
     .team {
         padding: 20px 0;
     }
+    .review-galwrap{
+        padding: 0;
+        overflow: visible;
+        .swiper-button{
+            display: none;
+        }
+    }
+    .swiper{
+        overflow: visible;
+    }
+    .card.review{
+        overflow: hidden;
+    }
 }
 
 

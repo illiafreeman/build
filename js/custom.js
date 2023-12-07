@@ -31,14 +31,25 @@ $('.team__gal').slick({
 
 /*certificate carousel*/
 const reviewGal = new Swiper('.review-gal', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1.5,
+    spaceBetween: 20,
     freeMode: true,
     loop: true,
+    navigation: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        480: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
 });
 /*end certificate carousel*/
 

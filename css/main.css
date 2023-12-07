@@ -2439,4 +2439,17 @@ body {
   .team {
     padding: 20px 0;
   }
+  .review-galwrap {
+    padding: 0;
+    overflow: visible;
+  }
+  .review-galwrap .swiper-button {
+    display: none;
+  }
+  .swiper {
+    overflow: visible;
+  }
+  .card.review {
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=main.css.map */
