@@ -134,3 +134,40 @@ $('.header__tel-btn').click(function () {
 });
 /*end mobile header btns*/
 
+/*counters*/
+function scrollEvent() {
+    var hT = $('.help__body').offset().top,
+      hH = $('.help__body').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)){
+        $('.help__body').each(function () {
+            $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+      window.removeEventListener("scroll", scrollEvent);
+    }
+}
+window.addEventListener("scroll", scrollEvent);
+/*end counters*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
