@@ -790,6 +790,15 @@
 .table-wrap{
     overflow: auto;
 }
+.grid__col_desc-title .pic {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 30px;
+}
+.grid__col_desc-title {
+    padding-bottom: 70px;
+}
 }
 @media only screen and (max-width: 768px) {
     .intro {
