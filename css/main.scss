@@ -866,6 +866,9 @@ body {
         &-desc {
             font-size: 20px;
             line-height: 130%;
+            span{
+                display: block;
+            }
         }
         
     }

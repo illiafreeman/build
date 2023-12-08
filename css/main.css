@@ -796,6 +796,9 @@ body {
   font-size: 20px;
   line-height: 130%;
 }
+.services__link-desc span {
+  display: block;
+}
 
 .benefit {
   position: relative;
