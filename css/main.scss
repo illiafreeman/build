@@ -382,17 +382,13 @@ body {
                 transform: translateX(10px);
                 transition: (var(--transition));
             }
-
             &:hover {
-                >svg {
-                    fill: var(--blue);
-                    right: 25px;
-                }
-
                 .header__subnav-parent {
                     color: #2063cc;
+                    >svg {
+                        fill: var(--blue);
+                    }
                 }
-
                 .header__subnav {
                     display: block;
                     opacity: 1;
@@ -401,9 +397,7 @@ body {
                 }
             }
         }
-
     }
-
     &__subnav-link,
     &__subnav-parent {
         font-size: 16px;
@@ -412,14 +406,26 @@ body {
         font-weight: 400;
         transition: var(--transition);
         display: inline-block;
-
+        padding-right: 0;
+        position: relative;
+        >svg {
+            fill: var(--black);
+            position: absolute;
+            top: 7px;
+            right: 0px;
+            transition: (var(--transition));
+            pointer-events: none;
+            width: 7px;
+            height: 4px;
+            transform: rotate(-90deg);
+        }
         &:hover {
             color: #2063cc;
         }
     }
-
     &__subnav-parent {
         cursor: default;
+        display: block;
     }
 
     &__tel {
@@ -1850,7 +1856,9 @@ body {
 .nowrap{
     white-space: nowrap;
 }
-
+.wow {
+    visibility: hidden;
+}
 
 
 
