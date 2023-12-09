@@ -164,12 +164,7 @@ window.addEventListener("scroll", scrollEvent);
 /*end counters*/
 
 
-$(window).on("load", function(){
-    if ($(window).width() > 1280){
-        new WOW().init();
-    }
-});
-
+new WOW().init();
 
 
 
