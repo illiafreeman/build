@@ -1,21 +1,102 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2px;
+    height: 100%;
+    li {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &:hover{
+            &>a{
+                color: var(--blue);
+            }
+        }
+        a {
+            font-weight: 400;
+            transition: var(--transition);
+            color: var(--color);
+            height: 40px;
+            padding: 0 20px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            
+        }
+        &.act,
+        &:hover{
+            
+            > ul{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                border-radius: 0px 0px 16px 16px;
+                box-shadow: 0px 14px 30px 0px rgba(32, 99, 204, 0.1);
+                background: #fff;
+                padding: 30px 0 30px 30px;
+                
+            }
+        }
+        button {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 20px;
+           height: 20px;
+           border: 0;
+           padding: 0; 
+           background: transparent;
+           transform: translateX(-20px) translateY(1px);
+           svg{
+                fill: var(--black);
+                top: 19px;
+                right: 16px;
+                transition: var(--transition);
+                width: 7px;
+                height: 4px;
+           }
+        }
+        ul {
+            display: none;
+            li{
+                align-items: stretch;
+                padding-right: 30px;
+                a{
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: stretch;
+                    font-size: 16px;
+                }
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 20px;
+                    border: 0;
+                    padding: 0; 
+                    background: transparent;
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    transform: rotate(-90deg);
+                    svg{
+                         fill: var(--black);
+                         top: 19px;
+                         right: 16px;
+                         transition: var(--transition);
+                         width: 7px;
+                         height: 4px;
+                    }
+                 }
+            }
+        }
+    }
+}
