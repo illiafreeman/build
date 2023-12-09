@@ -85,18 +85,18 @@ Fancybox.bind('[data-fancybox]', {
 
 /*map*/
 const LOCATION = { center: [30.318303, 59.984976], zoom: 16 };
-const POINT = {title: '<strong>ул. Лисичанская, д. 6<strong>'};
+const POINT = { title: '<strong>ул. Лисичанская, д. 6<strong>' };
 window.map = null;
 main();
 async function main() {
     await ymaps3.ready;
-    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
+    const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer } = ymaps3;
     const { YMapDefaultMarker } = await ymaps3.import('@yandex/ymaps3-markers@0.0.1');
     map = new YMap(document.getElementById('map'), { location: LOCATION });
     map.addChild((scheme = new YMapDefaultSchemeLayer()));
     map.addChild(new YMapDefaultFeaturesLayer());
-    map.addChild(new YMapDefaultMarker({ 
-        coordinates: LOCATION.center, 
+    map.addChild(new YMapDefaultMarker({
+        coordinates: LOCATION.center,
         title: POINT.title
     }));
 }
@@ -114,10 +114,10 @@ $(window).scroll(function () {
 /*end fixed header*/
 
 /*tabs*/
-$('.tabs-wrapper').each(function() {
+$('.tabs-wrapper').each(function () {
     let ths = $(this);
     ths.find('.tab-item').not(':first').hide();
-    ths.find('.tab').click(function() {
+    ths.find('.tab').click(function () {
         ths.find('.tab').removeClass('active').eq($(this).index()).addClass('active');
         ths.find('.tab-item').hide().eq($(this).index()).fadeIn()
     }).eq(0).addClass('active');
@@ -141,30 +141,35 @@ $('.header__tel-btn').click(function () {
 
 /*counters*/
 function scrollEvent() {
-    var hT = $('.help__body').offset().top,
-      hH = $('.help__body').outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
-    if (wS > (hT+hH-wH)){
-        $('.help__body').each(function () {
-            $(this).prop('Counter',0).animate({
-                Counter: $(this).text()
-            }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function (now) {
-                    $(this).text(Math.ceil(now));
-                }
+    if($('.help__body').length){
+        var hT = $('.help__body').offset().top,
+            hH = $('.help__body').outerHeight(),
+            wH = $(window).height(),
+            wS = $(this).scrollTop();
+        if (wS > (hT + hH - wH)) {
+            $('.help__body').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
             });
-        });
-      window.removeEventListener("scroll", scrollEvent);
+            window.removeEventListener("scroll", scrollEvent);
+        }
     }
+    
 }
 window.addEventListener("scroll", scrollEvent);
 /*end counters*/
 
+if($('.wow').length){
+    new WOW().init();
+}
 
-new WOW().init();
 
 
 
