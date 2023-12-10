@@ -131,8 +131,8 @@ $('.header__menu-btn').click(function () {
     $('.hamburger').toggleClass('open');
     $('.header__tel').removeClass('vis');
 });
-$('.header__nav-parent, .header__subnav-parent').click(function () {
-    $(this).toggleClass('vis');
+$('.parent button').click(function () {
+    $(this).parent().toggleClass('vis');
 });
 $('.header__tel-btn').click(function () {
     $('.header__tel').toggleClass('vis');

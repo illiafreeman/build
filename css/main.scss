@@ -236,7 +236,9 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
+        >div{
+            height: 100%;
+        }
         .btn {
             opacity: 0;
             visibility: hidden;
