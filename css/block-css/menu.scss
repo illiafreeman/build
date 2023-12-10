@@ -1,5 +1,5 @@
 .header__nav {
-    padding: 20px 0;
+    align-self: stretch;
     li {
         display: flex;
         align-items: center;
@@ -30,6 +30,7 @@
            right: 8px;
            background: transparent;
            transition: var(--transition);
+           cursor: default;
            svg{
                 fill: var(--black);
                 top: 19px;
@@ -92,16 +93,18 @@
             top: 110%;
             opacity: 0;
             visibility: hidden;
+            width: 360px;
+            min-width: 360px;
             li{
                 align-items: stretch;
-                padding-right: 10px;
+                //padding-right: 10px;
                 a{
                     padding: 0;
                     display: flex;
                     align-items: center;
                     width: 100%;
-                    max-width: 320px;
-                    min-width: 320px;
+                    //max-width: 320px;
+                    //min-width: 320px;
                     white-space: normal;
                     justify-content: stretch;
                     border: 0;
@@ -182,12 +185,14 @@
             width: 100%;
             margin: 0 auto;
             display: block;
+            padding: 20px 0;
         }
         li{
             a{
                 font-size: 13px;
                 padding: 0;
                 color: var(--black);
+                white-space: normal;
                 &:hover{
                     color: var(--black);
                 }
@@ -212,11 +217,13 @@
                     opacity: 1;
                     visibility: visible;
                     overflow: hidden;
-                    max-height: 0;
+                    max-height: 0px;
                     padding: 0 0 0 30px;
                     transition: var(--transition);
                     box-shadow: none;
                     width: 100%;
+                    max-width: 100%;
+                    min-width: auto;
                 }
                 &:hover{
                     button{
@@ -229,7 +236,7 @@
             }
             &.parent.vis{
                 >ul{
-                    max-height: none;
+                    max-height: 10000px;
                     flex-direction: column;
                 }
                 >a{

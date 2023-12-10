@@ -1,5 +1,5 @@
 .header__nav {
-  padding: 20px 0;
+  align-self: stretch;
 }
 .header__nav li {
   display: flex;
@@ -31,6 +31,7 @@
   right: 8px;
   background: transparent;
   transition: var(--transition);
+  cursor: default;
 }
 .header__nav li button svg {
   fill: var(--black);
@@ -84,18 +85,17 @@
   top: 110%;
   opacity: 0;
   visibility: hidden;
+  width: 360px;
+  min-width: 360px;
 }
 .header__nav li ul li {
   align-items: stretch;
-  padding-right: 10px;
 }
 .header__nav li ul li a {
   padding: 0;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 320px;
-  min-width: 320px;
   white-space: normal;
   justify-content: stretch;
   border: 0;
@@ -171,11 +171,13 @@
     width: 100%;
     margin: 0 auto;
     display: block;
+    padding: 20px 0;
   }
   .header__nav-wrap li a {
     font-size: 13px;
     padding: 0;
     color: var(--black);
+    white-space: normal;
   }
   .header__nav-wrap li a:hover {
     color: var(--black);
@@ -198,11 +200,13 @@
     opacity: 1;
     visibility: visible;
     overflow: hidden;
-    max-height: 0;
+    max-height: 0px;
     padding: 0 0 0 30px;
     transition: var(--transition);
     box-shadow: none;
     width: 100%;
+    max-width: 100%;
+    min-width: auto;
   }
   .header__nav-wrap li.parent:hover button {
     transform: rotate(0deg);
@@ -211,7 +215,7 @@
     fill: var(--black);
   }
   .header__nav-wrap li.parent.vis > ul {
-    max-height: none;
+    max-height: 10000px;
     flex-direction: column;
   }
   .header__nav-wrap li.parent.vis > a {
