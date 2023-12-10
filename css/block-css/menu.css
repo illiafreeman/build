@@ -188,6 +188,9 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  .header__nav-wrap li.parent > button {
+    top: 10px;
+  }
   .header__nav-wrap li.parent.vis > ul {
     position: static;
     opacity: 1;
