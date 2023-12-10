@@ -225,11 +225,12 @@ body {
         }
     }
 
-    &__container {
+    &__contaner {
         display: flex;
         justify-content: space-between;
         height: 120px;
         align-items: stretch;
+        display: flex;
     }
 
     &__nav-wrap {
@@ -474,9 +475,14 @@ body {
     padding-top: 120px;
 }
 
-.container {
+.contaner {
     width: 1660px;
+    max-width: 1660px;
     margin: 0 auto;
+    padding: 0;
+    &::before{
+
+    }
 }
 .btn-ac {
     padding: 50px 0 10px;

@@ -212,11 +212,12 @@ body {
 .header__group_contact .btn {
   align-self: center;
 }
-.header__container {
+.header__contaner {
   display: flex;
   justify-content: space-between;
   height: 120px;
   align-items: stretch;
+  display: flex;
 }
 .header__nav-wrap {
   display: flex;
@@ -425,11 +426,12 @@ body {
   padding-top: 120px;
 }
 
-.container {
+.contaner {
   width: 1660px;
+  max-width: 1660px;
   margin: 0 auto;
+  padding: 0;
 }
-
 .btn-ac {
   padding: 50px 0 10px;
   display: flex;
@@ -1742,7 +1744,7 @@ body {
 }
 
 @media only screen and (max-width: 1700px) {
-  .container {
+  .contaner {
     width: 100%;
     padding: 0 20px;
   }
@@ -1821,7 +1823,7 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
-  .header__container {
+  .header__contaner {
     height: 64px;
   }
   .main {
