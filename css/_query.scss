@@ -454,7 +454,10 @@
         padding-right: 56px;
     }
     .team {
-        padding: 20px 0 100px;
+        padding: 20px 0 0;
+    }
+    .team__contaner{
+        padding: 0 0 140px;
     }
     .team h2 {
         margin-bottom: 90px;
@@ -789,7 +792,7 @@
     }
     .team .slick-list {
         overflow: hidden;
-        margin: 0 -20px;
+        //margin: 0 -20px;
         padding: 0 20px;
     }
     .team {
@@ -807,6 +810,9 @@
     }
     .card.review{
         overflow: hidden;
+    }
+    .team__contaner {
+        padding: 0 0 40px;
     }
 }
 
