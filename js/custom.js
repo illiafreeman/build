@@ -33,6 +33,12 @@ if($('.team__gal').length){
             }
         ]
     });
+    $('.team__next').click(function() {
+        $('.team__gal').slick('slickNext');
+    });
+    $('.team__prev').click(function() {
+        $('.team__gal').slick('slickPrev');
+    })
 }
 /*end team carousel*/
 

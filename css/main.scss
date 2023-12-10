@@ -898,8 +898,11 @@ body {
 .team {
     background: #fff;
     padding: 60px 0 0;
-    &__gal{
-        .slick-prev, .slick-next{
+    &__nav{
+        display: flex;
+        gap: 20px;
+        &-btn{
+            display: none;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -909,28 +912,55 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: -74px;
-            right: 0;
             padding: 0;
             transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
             svg{
                 stroke: var(--black);
                 transition: var(--transition);
+                width: 8px;
+                height: 14px;
+                margin: -7px 0 0 -4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                &:last-child {
+                    left: 150%;
+                }
             }
             &:hover{
                 border-color: var(--blue);
                 svg{
+                    left: -50%;
                     stroke: var(--blue);
+                    &:last-child {
+                        left: 50%;
+                    }
+                }
+            }
+            &:last-child{
+                svg{
+                    left: 50%;
+                    &:last-child {
+                        left: -50%;
+                    }
+                }
+                &:hover{
+                    svg{
+                        left: 150%;
+                        &:last-child {
+                            left: 50%;
+                        }
+                    }
                 }
             }
         }
-        .slick-dots{
-            display: none !important;
-        }
-        .slick-prev{
-            right: 60px;
-        }
+        
+    }
+    .slick-dots, .slick-prev, .slick-next{
+        display: none !important;
     }
     &__desc{
         opacity: 0;
@@ -994,6 +1024,11 @@ body {
         width: 100vw;
         padding: 0 0 160px;
         overflow: hidden;
+        .contaner{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 }
 
