@@ -1217,36 +1217,6 @@ body {
   padding-top: 5px;
 }
 
-.contacts {
-  padding: 60px;
-}
-.contacts h2 {
-  margin-bottom: 30px;
-}
-.contacts__item {
-  margin-bottom: 22px;
-}
-.contacts__item:last-child {
-  margin-bottom: 0;
-}
-.contacts__name {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 150%;
-  margin-bottom: 5px;
-}
-.contacts__val {
-  font-size: 24px;
-  line-height: 110%;
-}
-.contacts__val a {
-  color: var(--black);
-  transition: var(--transition);
-}
-.contacts__val a:hover {
-  color: var(--orange);
-}
-
 .table-wrap {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1823,19 +1793,6 @@ body {
     min-height: 50px;
     display: flex;
     align-items: center;
-  }
-  .contacts__item {
-    margin-bottom: 10px;
-  }
-  .contacts h2 {
-    margin-bottom: 20px;
-  }
-  .contacts__name {
-    font-size: 13px;
-  }
-  .contacts__val {
-    font-size: 16px;
-    line-height: 140%;
   }
   .tabs {
     margin-top: -50px;

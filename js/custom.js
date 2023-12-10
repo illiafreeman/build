@@ -1,86 +1,92 @@
 
 /*team carousel*/
-$('.team__gal').slick({
-    slidesToShow: 8,
-    slidesToScroll: 8,
-    //infinite: true,
-    dots: true,
-    centerMode: true,
-    variableWidth: true,
-    focusOnSelect: true,
-    prevArrow: `<button class="slick-prev" aria-label="Previous" type="button">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 1L1 7L7 13" />
-                                </svg>
-    
-                            </button>`,
-    nextArrow: `<button class="slick-next" aria-label="Next" type="button">
-                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L7 7L1 13" />
-                                </svg>
-                            </button>`,
-    responsive: [
-        {
-            breakpoint: 780,
-            settings: {
-                centerMode: false,
-                variableWidth: true,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                arrows: false,
+if($('.team__gal').length){
+    $('.team__gal').slick({
+        slidesToShow: 8,
+        slidesToScroll: 8,
+        //infinite: true,
+        dots: true,
+        centerMode: true,
+        variableWidth: true,
+        focusOnSelect: true,
+        prevArrow: `<button class="slick-prev" aria-label="Previous" type="button">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 1L1 7L7 13" />
+                                    </svg>
+        
+                                </button>`,
+        nextArrow: `<button class="slick-next" aria-label="Next" type="button">
+                                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L7 7L1 13" />
+                                    </svg>
+                                </button>`,
+        responsive: [
+            {
+                breakpoint: 780,
+                settings: {
+                    centerMode: false,
+                    variableWidth: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
             }
-        }
-    ]
-});
+        ]
+    });
+}
 /*end team carousel*/
 
 /*certificate carousel*/
-const reviewGal = new Swiper('.review-gal', {
-    slidesPerView: 1.5,
-    spaceBetween: 20,
-    freeMode: true,
-    loop: true,
-    navigation: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-        480: {
-            slidesPerView: 2.5,
-            spaceBetween: 30,
+if($('.review-gal').length){
+    const reviewGal = new Swiper('.review-gal', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        freeMode: true,
+        loop: true,
+        navigation: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    }
-});
+        breakpoints: {
+            480: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        }
+    });
+}
 /*end certificate carousel*/
 
 /*certificate increase size*/
-Fancybox.bind('[data-fancybox]', {
-    compact: false,
-    idle: false,
-    animated: false,
-    showClass: false,
-    hideClass: false,
-    dragToClose: false,
-    contentClick: false,
-    Images: {
-        zoom: false,
-    },
-    Toolbar: {
-        display: {
-            left: [],
-            middle: ['infobar'],
-            right: ['close'],
+if($('[data-fancybox]').length){
+    Fancybox.bind('[data-fancybox]', {
+        compact: false,
+        idle: false,
+        animated: false,
+        showClass: false,
+        hideClass: false,
+        dragToClose: false,
+        contentClick: false,
+        Images: {
+            zoom: false,
         },
-    },
-    Thumbs: {
-        type: 'classic',
-    },
-});
+        Toolbar: {
+            display: {
+                left: [],
+                middle: ['infobar'],
+                right: ['close'],
+            },
+        },
+        Thumbs: {
+            type: 'classic',
+        },
+    });
+}
 /*end certificate increase size*/
 
 /*map*/
@@ -165,15 +171,15 @@ function scrollEvent() {
             window.removeEventListener("scroll", scrollEvent);
         }
     }
-    
 }
 window.addEventListener("scroll", scrollEvent);
 /*end counters*/
 
+/*animation on scroll*/
 if($('.wow').length){
     new WOW().init();
 }
-
+/*end animation on scroll*/
 
 
 
