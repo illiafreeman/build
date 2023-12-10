@@ -131,8 +131,12 @@ $('.header__menu-btn').click(function () {
     $('.hamburger').toggleClass('open');
     $('.header__tel').removeClass('vis');
 });
-$('.parent button').click(function () {
-    $(this).parent().toggleClass('vis');
+$('.header__nav > .parent > button').click(function () {
+    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
+    $(this).parent().find('.parent').removeClass('vis');
+});
+$('.header__nav .parent ul li.parent button').click(function () {
+    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
 });
 $('.header__tel-btn').click(function () {
     $('.header__tel').toggleClass('vis');
