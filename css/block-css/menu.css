@@ -178,9 +178,13 @@
   .header__nav-wrap li a {
     font-size: 13px;
     padding: 0;
+    color: var(--black);
+  }
+  .header__nav-wrap li a:hover {
+    color: var(--black);
   }
   .header__nav-wrap li.act a, .header__nav-wrap li:hover a {
-    color: var(--blue);
+    color: var(--black);
     border-color: transparent;
     background: transparent;
   }
@@ -191,19 +195,38 @@
   .header__nav-wrap li.parent > button {
     top: 10px;
   }
-  .header__nav-wrap li.parent.vis > ul {
+  .header__nav-wrap li.parent > ul {
     position: static;
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 0 0 30px;
+    transition: var(--transition);
+  }
+  .header__nav-wrap li.parent:hover button {
+    transform: rotate(0deg);
+  }
+  .header__nav-wrap li.parent:hover button svg {
+    fill: var(--black);
+  }
+  .header__nav-wrap li.parent.vis > ul {
+    max-height: none;
   }
   .header__nav-wrap li.parent.vis > a {
     color: var(--blue);
   }
+  .header__nav-wrap li.parent.vis > button {
+    transform: rotate(180deg);
+  }
   .header__nav-wrap li.parent.vis > button svg {
     fill: var(--blue);
   }
-  .header__nav-wrap li.parent.vis:hover > button {
-    transform: rotate(0deg);
+  .header__nav-wrap li ul li button {
+    transform: none;
+  }
+  .header__nav-wrap li ul li:hover button svg {
+    fill: var(--black);
   }
   .open-menu .header {
     border-radius: 0;

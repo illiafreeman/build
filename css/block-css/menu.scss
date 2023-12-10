@@ -190,11 +190,15 @@
             a{
                 font-size: 13px;
                 padding: 0;
+                color: var(--black);
+                &:hover{
+                    color: var(--black);
+                }
             }
             &.act,
             &:hover{
                 a{
-                    color: var(--blue);
+                    color: var(--black);
                     border-color: transparent;
                     background: transparent;
                 }
@@ -205,29 +209,62 @@
                 >button{
                     top: 10px;
                 }
-            }
-            &.parent.vis{
                 >ul{
                     position: static;
                     opacity: 1;
                     visibility: visible;
-                    li{
-
+                    overflow: hidden;
+                    max-height: 0;
+                    padding: 0 0 0 30px;
+                    transition: var(--transition);
+                }
+                &:hover{
+                    button{
+                        transform: rotate(0deg);
+                        svg{
+                            fill: var(--black);
+                        }
                     }
-                    
+                }
+            }
+            &.parent.vis{
+                >ul{
+                    max-height: none;
                 }
                 >a{
                     color: var(--blue);
                 }
                 >button{
+                    transform: rotate(180deg);
                     svg{
                         fill: var(--blue);
                     }
                 }
                 &:hover{
                     >button{
-                        transform: rotate(0deg);
+                        
 
+                    }
+                    ul{
+                        li{
+                            a{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            ul{
+                li{
+                    button{
+                        transform: none;
+                    }
+                    &:hover{
+                        button{
+                            svg{
+                                fill: var(--black);
+                            }
+                        }
                     }
                 }
             }
