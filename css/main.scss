@@ -1093,6 +1093,36 @@ body {
         position: relative;
         .swiper-slide{
             cursor: pointer;
+            transition: var(--transition);
+            &:after{
+                transition: var(--transition);
+                content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(32, 99, 204, 0.3) url(../img/icon_search.svg) no-repeat center center;
+                    top: 0;
+                    left: 0;
+                    //margin: -21px 0 0 -21px;
+                    z-index: 10;
+                    opacity: 0;
+            }
+            &:hover{
+                &:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(32, 99, 204, 0.3) url(../img/icon_search.svg) no-repeat center center;
+                    top: 0;
+                    left: 0;
+                    //margin: -21px 0 0 -21px;
+                    z-index: 10;
+                    opacity: 1;
+                }
+            }
         }
         .swiper-button{
             width: 40px;

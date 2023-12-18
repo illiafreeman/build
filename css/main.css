@@ -1031,6 +1031,32 @@ body {
 }
 .review-galwrap .swiper-slide {
   cursor: pointer;
+  transition: var(--transition);
+}
+.review-galwrap .swiper-slide:after {
+  transition: var(--transition);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 99, 204, 0.3) url(../img/icon_search.svg) no-repeat center center;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+}
+.review-galwrap .swiper-slide:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 99, 204, 0.3) url(../img/icon_search.svg) no-repeat center center;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 1;
 }
 .review-galwrap .swiper-button {
   width: 40px;
